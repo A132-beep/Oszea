@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Story — OSZEA · Forget the Forecast</title>
+<meta name="description" content="OSZEA was born between two rainy cities — Auckland and Melbourne. Two friends across the Tasman built waterproof footwear that actually looks good. This is our story.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/map-footer.css">
+<link rel="stylesheet" href="css/story.css">
+</head>
+<body>
+
+<!-- ============ ANNOUNCEMENT BAR ============ -->
+<div class="announce" data-screen-label="Announcement bar">
+  <div class="announce-inner">
+    <div class="announce-spacer"></div>
+    <div class="announce-msgs">
+      <div class="announce-msg active"><span class="dot"></span><span>Born between Auckland &amp; Melbourne — waterproof footwear for real NZ &amp; AU weather.</span></div>
+    </div>
+    <div class="announce-side">
+      <button class="cur-sel"><span class="flag">🇳🇿</span><span>NZD</span><span class="label-hide" style="opacity:.5">/ AUD</span></button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<div class="nav-zone" id="navZone">
+  <nav class="nav wrap-nav" aria-label="Primary">
+    <div class="nav-links desktop">
+      <a class="nav-link" href="#">Men</a>
+      <a class="nav-link" href="#">Women</a>
+      <a class="nav-link" href="#">Kids</a>
+      <a class="nav-link" href="#">Elements</a>
+      <a class="nav-link" href="ZEA-TEX Technology.html">ZEA-TEX™</a>
+    </div>
+    <button class="hamburger icon-btn mobile-only" id="hamBtn" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <a class="nav-logo" href="index.html" aria-label="OSZEA home"><img src="assets/oszea-logo.png" alt="OSZEA"></a>
+    <div class="nav-actions">
+      <button class="icon-btn hide-mobile" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+      <button class="icon-btn hide-mobile" aria-label="Account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+      </button>
+    </div>
+  </nav>
+</div>
+
+<!-- ============ STICKY STORY PROGRESS ============ -->
+<nav class="story-prog" id="storyProg" aria-label="Story sections">
+  <a href="#hero" class="sp-dot active" data-i="0"><span class="sp-lab">The Beginning</span></a>
+  <a href="#name" class="sp-dot" data-i="1"><span class="sp-lab">The Name</span></a>
+  <a href="#cities" class="sp-dot" data-i="2"><span class="sp-lab">Two Cities</span></a>
+  <a href="#problem" class="sp-dot" data-i="3"><span class="sp-lab">The Problem</span></a>
+  <a href="#journey" class="sp-dot" data-i="4"><span class="sp-lab">The Journey</span></a>
+  <a href="#community" class="sp-dot" data-i="5"><span class="sp-lab">Community</span></a>
+  <a href="#belief" class="sp-dot" data-i="6"><span class="sp-lab">Our Belief</span></a>
+  <a href="#promise" class="sp-dot" data-i="7"><span class="sp-lab">The Promise</span></a>
+  <a href="#cta" class="sp-dot" data-i="8"><span class="sp-lab">Step In</span></a>
+</nav>
+
+<main>
+
+<!-- ============================================================
+     1 · IMMERSIVE HERO — asymmetric split
+     ============================================================ -->
+<header class="oszea-story-hero" id="hero" data-screen-label="Hero">
+  <div class="osh-grid wrap">
+    <div class="osh-panel">
+      <span class="osh-eyebrow"><span class="pulse"></span>Our Story</span>
+      <h1 class="osh-title">
+        Born Between<br>Two Rainy Cities.<br><span class="teal">Made for Everywhere</span><br>Between.
+      </h1>
+      <p class="osh-sub">Two friends. Two countries. One everyday problem — shoes that couldn't keep up with real weather.</p>
+      <div class="osh-cta">
+        <a href="#" class="btn btn-primary">Shop Waterproof Shoes <span class="arw">→</span></a>
+        <a href="#name" class="btn btn-ghost on-dark">Explore the Journey <span class="arw">↓</span></a>
+      </div>
+      <div class="osh-locs">
+        <span class="osh-loc"><span class="chd"></span>Auckland</span>
+        <span class="osh-loc"><span class="chd"></span>Melbourne</span>
+        <span class="osh-loc dim">Across the Tasman</span>
+      </div>
+    </div>
+
+    <div class="osh-visual" data-parallax="0.06">
+      <div class="ph dark"><span class="ph-label">[ HERO IMAGE — WATERPROOF SHOES IN A RAINY CITY MOMENT ]</span></div>
+      <canvas class="osh-rain" id="heroRain" aria-hidden="true"></canvas>
+      <span class="osh-chip c1"><span class="chd"></span>Auckland</span>
+      <span class="osh-chip c2"><span class="chd"></span>Melbourne</span>
+    </div>
+  </div>
+
+  <a href="#name" class="osh-scroll" aria-label="Scroll to begin">
+    <span class="osh-scroll-lab">Begin the story</span>
+    <span class="osh-scroll-line"><span></span></span>
+  </a>
+</header>
+
+<!-- ============================================================
+     2 · THE NAME REVEAL
+     ============================================================ -->
+<section class="oszea-story-name" id="name" data-screen-label="The name">
+  <svg class="osn-thread" viewBox="0 0 1200 520" preserveAspectRatio="none" aria-hidden="true">
+    <path class="osn-line" d="M250,150 C 420,150 430,300 600,300 C 770,300 780,150 950,150" pathLength="1"></path>
+  </svg>
+
+  <div class="wrap">
+    <div class="osn-head reveal">
+      <span class="eyebrow">Two Places, One Name</span>
+      <h2>Australia meets New Zealand.</h2>
+    </div>
+
+    <div class="osn-equation">
+      <button class="osn-part reveal" data-flip>
+        <span class="osn-glyph">OS</span>
+        <span class="osn-from">Australia</span>
+        <span class="osn-mean">Where one half of OSZEA woke up to Melbourne's changing skies.</span>
+      </button>
+
+      <span class="osn-op reveal d1">+</span>
+
+      <button class="osn-part reveal d1" data-flip>
+        <span class="osn-glyph">ZEA</span>
+        <span class="osn-from">New Zealand</span>
+        <span class="osn-mean">Where the other half walked Auckland's wet streets every morning.</span>
+      </button>
+
+      <span class="osn-op osn-eq reveal d2">=</span>
+
+      <div class="osn-part osn-result reveal d2">
+        <span class="osn-glyph">OSZEA</span>
+        <span class="osn-from">The connection</span>
+      </div>
+    </div>
+
+    <p class="osn-copy reveal d2">The <b>“OS”</b> in OSZEA comes from Australia. The <b>“ZEA”</b> comes from New Zealand. Together, they represent the connection between two places that shaped our idea, our lifestyle, and our purpose.</p>
+
+    <div class="osn-tags reveal d3">
+      <span class="osn-tag">Auckland</span>
+      <span class="osn-tag">Melbourne</span>
+      <span class="osn-tag">Rain</span>
+      <span class="osn-tag">Movement</span>
+      <span class="osn-tag">Everyday Weather</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     3 · TWO CITIES, SAME PROBLEM
+     ============================================================ -->
+<section class="oszea-story-cities" id="cities" data-screen-label="Two cities">
+  <div class="wrap">
+    <div class="osc-head reveal">
+      <span class="eyebrow on-dark">The Same Sky, 2,600km Apart</span>
+      <h2>Two cities. Same problem.</h2>
+    </div>
+
+    <div class="osc-split">
+      <div class="osc-panel reveal" data-city>
+        <div class="ph dark"><span class="ph-label">[ AUCKLAND RAINY CITY IMAGE PLACEHOLDER ]</span></div>
+        <div class="osc-panel-body">
+          <span class="osc-coord">36.8°S · 174.7°E</span>
+          <h3>Auckland</h3>
+          <p>Wet streets. Sudden showers. Daily movement.</p>
+        </div>
+      </div>
+
+      <div class="osc-mid reveal d1" aria-hidden="false">
+        <span class="osc-mid-line"></span>
+        <div class="osc-mid-card">
+          <span class="osc-mid-lab">Different cities</span>
+          <strong>Same frustration.</strong>
+        </div>
+        <span class="osc-mid-line"></span>
+      </div>
+
+      <div class="osc-panel reveal d2" data-city>
+        <div class="ph dark"><span class="ph-label">[ MELBOURNE RAINY CITY IMAGE PLACEHOLDER ]</span></div>
+        <div class="osc-panel-body">
+          <span class="osc-coord">37.8°S · 144.9°E</span>
+          <h3>Melbourne</h3>
+          <p>Changing skies. Rainy commutes. Unpredictable plans.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="osc-copy reveal d1">We wanted shoes that could handle the weather without looking like outdoor gear. Something waterproof, comfortable, and easy to wear every day.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     4 · THE PROBLEM CARDS
+     ============================================================ -->
+<section class="oszea-story-problem" id="problem" data-screen-label="The problem">
+  <div class="wrap">
+    <div class="osp-head reveal">
+      <span class="eyebrow">Before OSZEA</span>
+      <h2>We were tired of choosing between style and function.</h2>
+      <p class="lead">Every option asked us to give something up. So we kept a list of everything that was wrong.</p>
+    </div>
+
+    <div class="osp-grid">
+      <article class="osp-card reveal" data-reveal-card>
+        <div class="osp-face osp-front">
+          <span class="osp-num">01</span>
+          <div class="osp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l5-3 4 2 4-2 5 3v4c0 6-5 9-9 11-4-2-9-5-9-11Z"/></svg></div>
+          <h3>Stylish, but not waterproof</h3>
+          <p>Looked good — until the weather changed.</p>
+        </div>
+        <div class="osp-face osp-back">
+          <span class="osp-back-lab">The fix</span>
+          <p>A waterproof membrane hidden inside a shoe you'd actually wear.</p>
+        </div>
+      </article>
+
+      <article class="osp-card reveal d1" data-reveal-card>
+        <div class="osp-face osp-front">
+          <span class="osp-num">02</span>
+          <div class="osp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16l4-9 4 5 4-7 4 11"/><path d="M3 20h18"/></svg></div>
+          <h3>Waterproof, but too bulky</h3>
+          <p>Protected your feet, but didn't fit everyday style.</p>
+        </div>
+        <div class="osp-face osp-back">
+          <span class="osp-back-lab">The fix</span>
+          <p>Lightweight build with a modern silhouette — no gumboot in sight.</p>
+        </div>
+      </article>
+
+      <article class="osp-card reveal d2" data-reveal-card>
+        <div class="osp-face osp-front">
+          <span class="osp-num">03</span>
+          <div class="osp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14a4 4 0 0 1 0-8 5 5 0 0 1 9.6-1.6A3.5 3.5 0 0 1 19 11"/><path d="M5 14h13"/><path d="M8 18h9"/></svg></div>
+          <h3>Comfort, but not all day</h3>
+          <p>Many options were too stiff, heavy, or technical.</p>
+        </div>
+        <div class="osp-face osp-back">
+          <span class="osp-back-lab">The fix</span>
+          <p>Flexible, cushioned comfort engineered for full days on your feet.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="osp-solution reveal d1">
+      <span class="osp-sol-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></span>
+      <p>So we built OSZEA for the space in between — <b>weather-ready shoes made for real life.</b></p>
+    </div>
+    <p class="osp-hint reveal d1"><span class="tap-dot"></span>Hover a card to see how we solved it</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     5 · KICKSTARTER JOURNEY
+     ============================================================ -->
+<section class="oszea-story-journey" id="journey" data-screen-label="The journey">
+  <div class="wrap">
+    <div class="osj-head reveal">
+      <span class="eyebrow on-dark">Backed by Believers</span>
+      <h2>From an idea to a community.</h2>
+      <p class="lead on-dark">We took OSZEA to Kickstarter because we wanted to know if other people felt the same problem we did. The response gave us more than early support — it gave us a community.</p>
+    </div>
+
+    <div class="osj-track" id="osjTrack">
+      <div class="osj-rail"><span class="osj-fill" id="osjFill"></span></div>
+
+      <div class="osj-step reveal" data-step>
+        <span class="osj-dot"></span>
+        <span class="osj-ix">Step 01</span>
+        <h3>The Frustration</h3>
+        <p>Rainy cities exposed the gap in everyday footwear.</p>
+      </div>
+      <div class="osj-step reveal d1" data-step>
+        <span class="osj-dot"></span>
+        <span class="osj-ix">Step 02</span>
+        <h3>The First Idea</h3>
+        <p>Waterproof shoes that looked good and felt easy to wear.</p>
+      </div>
+      <div class="osj-step reveal d2" data-step>
+        <span class="osj-dot"></span>
+        <span class="osj-ix">Step 03</span>
+        <h3>Kickstarter Launch</h3>
+        <p>Early supporters helped bring the idea to life.</p>
+      </div>
+      <div class="osj-step reveal d1" data-step>
+        <span class="osj-dot"></span>
+        <span class="osj-ix">Step 04</span>
+        <h3>Community Feedback</h3>
+        <p>Real people shaped the comfort, fit, and direction.</p>
+      </div>
+      <div class="osj-step reveal d2" data-step>
+        <span class="osj-dot"></span>
+        <span class="osj-ix">Step 05</span>
+        <h3>OSZEA Today</h3>
+        <p>A growing brand built for movement and unpredictable weather.</p>
+      </div>
+    </div>
+
+    <div class="osj-media reveal d1">
+      <div class="ph dark"><span class="ph-label">[ KICKSTARTER / EARLY OSZEA JOURNEY IMAGE PLACEHOLDER ]</span></div>
+      <span class="osj-media-badge"><span class="d"></span>Community-backed since day one</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     6 · COMMUNITY-LED
+     ============================================================ -->
+<section class="oszea-story-community" id="community" data-screen-label="Community">
+  <div class="wrap">
+    <div class="osm-head reveal">
+      <span class="eyebrow">Worn In, Wherever You Are</span>
+      <h2>Shaped by the people who wear them.</h2>
+      <p class="lead">From the beginning, OSZEA has been shaped by real people — commuters, travellers, parents, walkers, and everyday customers who wanted footwear they could trust in wet weather.</p>
+    </div>
+
+    <div class="osm-collage">
+      <div class="osm-img i1 reveal" data-parallax="0.06"><div class="ph"><span class="ph-label">[ COMMUNITY IMAGE — RAINY WALK ]</span></div></div>
+      <div class="osm-img i2 reveal d1" data-parallax="0.1"><div class="ph"><span class="ph-label">[ CUSTOMER LIFESTYLE IMAGE ]</span></div></div>
+      <div class="osm-img i3 reveal d2" data-parallax="0.08"><div class="ph"><span class="ph-label">[ PRODUCT IN REAL LIFE IMAGE ]</span></div></div>
+
+      <figure class="osm-quote q1 reveal d1">
+        <span class="osm-q-mark">“</span>
+        <blockquote>Finally, shoes I can wear in the rain without changing my whole outfit.</blockquote>
+        <figcaption>— Verified customer · Auckland</figcaption>
+      </figure>
+      <figure class="osm-quote q2 reveal d2">
+        <span class="osm-q-mark">“</span>
+        <blockquote>Comfortable enough for everyday errands, but ready when the weather turns.</blockquote>
+        <figcaption>— Verified customer · Melbourne</figcaption>
+      </figure>
+      <figure class="osm-quote q3 reveal d3">
+        <span class="osm-q-mark">“</span>
+        <blockquote>This is exactly what wet-city footwear should feel like.</blockquote>
+        <figcaption>— Verified customer · Wellington</figcaption>
+      </figure>
+    </div>
+
+    <!-- mobile carousel (mirrors the quotes) -->
+    <div class="osm-carousel" aria-label="Customer quotes">
+      <div class="osm-car-track" id="osmCarTrack">
+        <figure class="osm-car-slide"><span class="osm-q-mark">“</span><blockquote>Finally, shoes I can wear in the rain without changing my whole outfit.</blockquote><figcaption>— Verified customer · Auckland</figcaption></figure>
+        <figure class="osm-car-slide"><span class="osm-q-mark">“</span><blockquote>Comfortable enough for everyday errands, but ready when the weather turns.</blockquote><figcaption>— Verified customer · Melbourne</figcaption></figure>
+        <figure class="osm-car-slide"><span class="osm-q-mark">“</span><blockquote>This is exactly what wet-city footwear should feel like.</blockquote><figcaption>— Verified customer · Wellington</figcaption></figure>
+      </div>
+      <div class="osm-car-dots" id="osmCarDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     7 · BIG BRAND BELIEF
+     ============================================================ -->
+<section class="oszea-story-belief" id="belief" data-screen-label="Our belief">
+  <canvas class="osb-rain" id="beliefRain" aria-hidden="true"></canvas>
+  <div class="wrap osb-inner">
+    <span class="eyebrow on-dark osb-eyebrow reveal">Our Belief</span>
+    <h2 class="osb-title">
+      <span class="osb-w">Forget</span> <span class="osb-w">the</span> <span class="osb-w teal">Forecast.</span>
+    </h2>
+    <p class="osb-statement reveal">
+      <span class="osb-ln">Life does not stop for rain.</span>
+      <span class="osb-ln">Neither should your shoes.</span>
+    </p>
+    <p class="osb-copy reveal d1">Weather should not decide your day. OSZEA creates waterproof footwear for people who keep moving, even when the weather changes.</p>
+    <div class="osb-cta reveal d2"><a href="#promise" class="btn btn-primary">See What We Promise <span class="arw">→</span></a></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     8 · PRODUCT PROMISE
+     ============================================================ -->
+<section class="oszea-story-promise" id="promise" data-screen-label="The promise">
+  <div class="wrap">
+    <div class="osr-head reveal">
+      <span class="eyebrow">The OSZEA Promise</span>
+      <h2>Made for real weather. Designed for real life.</h2>
+    </div>
+
+    <div class="osr-grid">
+      <article class="osr-card reveal" data-promise>
+        <div class="osr-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11Z"/></svg></div>
+        <span class="osr-num">01</span>
+        <h3>Waterproof</h3>
+        <p>Made to handle wet days without slowing you down.</p>
+        <span class="osr-underline"></span>
+      </article>
+      <article class="osr-card reveal d1" data-promise>
+        <div class="osr-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14a4 4 0 0 1 0-8 5 5 0 0 1 9.6-1.6A3.5 3.5 0 0 1 19 11"/><path d="M5 14h13"/><path d="M8 18h9"/></svg></div>
+        <span class="osr-num">02</span>
+        <h3>Comfortable</h3>
+        <p>Built for errands, travel, commutes, and daily movement.</p>
+        <span class="osr-underline"></span>
+      </article>
+      <article class="osr-card reveal d2" data-promise>
+        <div class="osr-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 7l2 13h12l2-13M9 7a3 3 0 0 1 6 0"/></svg></div>
+        <span class="osr-num">03</span>
+        <h3>Easy to Style</h3>
+        <p>Modern silhouettes that work beyond bad weather.</p>
+        <span class="osr-underline"></span>
+      </article>
+      <article class="osr-card reveal d3" data-promise>
+        <div class="osr-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 5.5a3 3 0 0 1 0 5.7M21 20c0-2.6-1.7-4.9-4-5.7"/></svg></div>
+        <span class="osr-num">04</span>
+        <h3>Community-Led</h3>
+        <p>Improved through feedback from the people who wear them.</p>
+        <span class="osr-underline"></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     9 · FINAL CTA
+     ============================================================ -->
+<section class="oszea-story-final" id="cta" data-screen-label="Final CTA">
+  <div class="osf-media" data-parallax="0.1">
+    <div class="ph dark"><span class="ph-label">[ FINAL LIFESTYLE / PRODUCT IMAGE PLACEHOLDER ]</span></div>
+    <div class="osf-scrim"></div>
+  </div>
+  <div class="wrap osf-inner">
+    <span class="osf-badge reveal"><span class="d"></span>Waterproof Everyday Footwear</span>
+    <h2 class="osf-title reveal">Ready for the weather?</h2>
+    <p class="osf-sub reveal d1">Step into waterproof comfort made for everyday life.</p>
+    <div class="osf-cta reveal d2">
+      <a href="#" class="btn btn-primary">Shop Waterproof Shoes <span class="arw">→</span></a>
+      <a href="ZEA-TEX Technology.html" class="btn btn-outline">Explore Our Promise <span class="arw">→</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" data-screen-label="Footer">
+  <canvas class="foot-water" id="footWater" aria-hidden="true"></canvas>
+  <div class="foot-ticker"><div class="foot-ticker-track" id="tickerTrack"></div></div>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="fb-statement">Forget the <span class="teal">Forecast.</span></div>
+        <p class="fb-sub">Waterproof comfort made for real NZ &amp; AU weather.</p>
+        <div class="foot-news">
+          <div class="fn-lab">Stay Dry With Us</div>
+          <form class="foot-news-form" novalidate>
+            <input type="email" placeholder="Enter your email" aria-label="Email" required>
+            <button class="btn btn-primary btn-sm" type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">Men</a></li><li><a href="#">Women</a></li><li><a href="#">Kids</a></li>
+          <li><a href="#">Elements</a></li><li><a href="#">Add-ons</a></li>
+          <li><a href="#">Tasman Essentials</a></li><li><a href="#">Urban Essentials</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Brand</h4>
+        <ul>
+          <li><a href="Our Story.html">Our Story</a></li><li><a href="ZEA-TEX Technology.html">ZEA-TEX™</a></li>
+          <li><a href="#">Waterproof Comfort</a></li><li><a href="#">Sustainability</a></li><li><a href="#">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li><li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns &amp; Exchanges</a></li><li><a href="#">Size Guide</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li><li><a href="Privacy Policy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>RainClub</h4>
+        <ul>
+          <li><a href="#">Join RainClub</a></li><li><a href="#">@oszeaofficial</a></li>
+          <li><a href="#">#RainClub</a></li><li><a href="#">Customer Stories</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-watermark" aria-hidden="true"><span class="fw-word">OSZEA</span></div>
+    <div class="foot-bottom">
+      <div class="fb-left">
+        <span>© 2026 OSZEA Footwear. All rights reserved.</span>
+        <a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+        <div class="foot-pay"><span class="pay">VISA</span><span class="pay">MC</span><span class="pay">AMEX</span><span class="pay">PAY</span><span class="pay">GPAY</span></div>
+        <span class="foot-cur">🇳🇿 NZD / AUD ▾</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mmenu" id="mmenu">
+  <div class="scrim"></div>
+  <div class="panel">
+    <div class="m-top">
+      <img src="assets/oszea-logo.png" alt="OSZEA">
+      <button class="icon-btn" data-mclose aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <a class="m-link" href="#">Men <span class="arw">→</span></a>
+    <a class="m-link" href="#">Women <span class="arw">→</span></a>
+    <a class="m-link" href="#">Kids <span class="arw">→</span></a>
+    <a class="m-link" href="#">Elements <span class="arw">→</span></a>
+    <a class="m-link" href="ZEA-TEX Technology.html">ZEA-TEX™ <span class="arw">→</span></a>
+  </div>
+</div>
+
+<script src="js/story.js" defer></script>
+</body>
+</html>

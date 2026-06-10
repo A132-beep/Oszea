@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urban Essentials — Everyday Waterproof Sneaker | OSZEA</title>
+<meta name="description" content="Urban Essentials by OSZEA — the everyday waterproof sneaker for school runs, errands, dog walks and daily life. Lightweight, breathable comfort. Ships across NZ &amp; AU.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/map-footer.css">
+<link rel="stylesheet" href="css/product.css">
+<link rel="stylesheet" href="css/urban.css">
+</head>
+<body>
+
+<!-- ============ ANNOUNCEMENT BAR ============ -->
+<div class="announce" data-screen-label="Announcement bar">
+  <div class="announce-inner">
+    <div class="announce-spacer"></div>
+    <div class="announce-msgs" id="announceMsgs">
+      <div class="announce-msg active"><span class="dot"></span><span><b>Free standard shipping</b> on orders over $120 in NZ &amp; AU</span></div>
+      <div class="announce-msg"><span class="dot"></span><span>Your everyday waterproof sneaker — <b>now on sale</b></span></div>
+      <div class="announce-msg"><span class="dot"></span><span>Ships from <b>Auckland</b> — fast NZ &amp; AU delivery</span></div>
+    </div>
+    <div class="announce-side">
+      <button class="cur-sel"><span class="flag">🇳🇿</span><span>NZD</span><span class="label-hide" style="opacity:.5">/ AUD</span></button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<div class="nav-zone" id="navZone">
+  <nav class="nav wrap-nav" aria-label="Primary">
+    <div class="nav-links desktop">
+      <a class="nav-link" href="#">Men</a>
+      <a class="nav-link" href="#">Women</a>
+      <a class="nav-link" href="#">Kids</a>
+      <a class="nav-link" href="#">Elements</a>
+      <a class="nav-link" href="#">Add Ons</a>
+    </div>
+    <button class="hamburger icon-btn mobile-only" id="hamBtn" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <a class="nav-logo" href="index.html" aria-label="OSZEA home"><img src="assets/oszea-logo.png" alt="OSZEA"></a>
+    <div class="nav-actions">
+      <button class="icon-btn hide-mobile" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="icon-btn hide-mobile" aria-label="Account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></button>
+      <button class="icon-btn" id="cartBtn" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span class="cart-count" id="cartCount">0</span></button>
+    </div>
+  </nav>
+</div>
+
+<main class="pdp-page urb-page">
+
+<!-- ============================================================
+     1 · PRODUCT IMAGE + BUYING SECTION
+     ============================================================ -->
+<section class="section wrap pdp" data-screen-label="Buy box">
+  <nav class="pdp-bc" aria-label="Breadcrumb">
+    <a href="index.html">Home</a><span class="sep">/</span>
+    <a href="#">Men</a><span class="sep">/</span>
+    <a href="#">Everyday Sneakers</a><span class="sep">/</span>
+    <span class="cur">Urban Essentials</span>
+  </nav>
+
+  <div class="pdp-hero">
+    <!-- GALLERY -->
+    <div class="pdp-gallery" data-screen-label="Gallery">
+      <div class="pdp-thumbs" id="pdpThumbs"></div>
+      <div class="pdp-stage" id="pdpStage">
+        <div class="pdp-badges">
+          <span class="pdp-badge" id="pdpColourTag">Bestseller</span>
+          <span class="pdp-badge navy">Sale</span>
+        </div>
+        <div class="pdp-stage-track" id="pdpTrack"></div>
+        <div class="pdp-stage-foot">
+          <span class="pdp-zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3M11 8v6M8 11h6"/></svg>Click to zoom</span>
+          <span class="pdp-counter" id="pdpCounter">01 / 05</span>
+        </div>
+      </div>
+      <div class="pdp-dots" id="pdpDots"></div>
+    </div>
+
+    <!-- BUY BOX -->
+    <div class="pdp-buy" data-screen-label="Buy box panel">
+      <span class="eyebrow pdp-eyebrow">Everyday Waterproof Sneaker</span>
+      <div class="pdp-titlerow">
+        <div>
+          <h1 class="pdp-title">Urban Essentials</h1>
+          <p class="pdp-promise">100% Waterproof + Free Shipping</p>
+        </div>
+      </div>
+
+      <div class="pdp-rating">
+        <span class="jdg-slot" title="Judge.me preview badge renders here">
+          <span class="jdg-stars">★★★★★</span>
+          <span class="jdg-meta"><b>4.8</b> · <span>1,231 reviews</span></span>
+          <span class="jdg-note">Judge.me</span>
+        </span>
+        <span class="pdp-soldby"><span class="d"></span>Ships from Auckland</span>
+      </div>
+
+      <!-- PRICE + SALE -->
+      <div class="pdp-priceblock">
+        <span class="pdp-price" id="pdpPrice">$150</span>
+        <span class="urb-compare">$170</span>
+        <span class="urb-save">SAVE 12%</span>
+        <span class="pdp-instal">or 4 interest-free payments of <b>$37.50</b> with Afterpay</span>
+      </div>
+
+      <p style="font-family:var(--font-secondary);font-size:15px;line-height:1.55;color:var(--grey-600);margin-top:14px;max-width:46ch">An everyday all-terrain sneaker with ultra-light cushioning and unmatched waterproof comfort.</p>
+
+      <!-- STOCK -->
+      <div class="urb-stock">
+        <p class="urb-stock-line">Hurry! Only <b>9 items</b> left in stock.</p>
+        <div class="urb-stock-bar"><span class="urb-stock-fill"></span></div>
+      </div>
+
+      <!-- COLOUR -->
+      <div class="pdp-group">
+        <div class="pdp-group-head"><span class="pdp-group-lab">Colour: <b id="pdpColourName">Midnight Shadow</b></span></div>
+        <div class="pdp-colours" id="pdpColours"></div>
+      </div>
+
+      <!-- FIT -->
+      <div class="pdp-group">
+        <div class="pdp-group-head"><span class="pdp-group-lab">Fit</span></div>
+        <div class="pdp-seg" id="pdpGender" role="tablist" aria-label="Select fit">
+          <button class="active" data-gender="men" role="tab" aria-selected="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="14" r="6"/><path d="M14.5 9.5 20 4M20 4h-5M20 4v5"/></svg>Men</button>
+          <button data-gender="women" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M12 14v7M9 18h6"/></svg>Women</button>
+        </div>
+      </div>
+
+      <!-- SIZE -->
+      <div class="pdp-group">
+        <div class="pdp-group-head">
+          <span class="pdp-group-lab">Size <span id="pdpSizeSys" style="text-transform:none;font-family:var(--font-primary);letter-spacing:-.01em;color:var(--grey-600)">AU / US Men</span></span>
+          <button class="pdp-group-link" id="pdpSizeGuide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v10H3zM7 7v4M11 7v6M15 7v4M19 7v6"/></svg>Size guide</button>
+        </div>
+        <div class="pdp-sizes" id="pdpSizes"></div>
+        <div class="pdp-size-msg hide" id="pdpSizeMsg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg><span id="pdpSizeMsgTxt"></span></div>
+        <p class="pdp-size-fomo" id="pdpSizeFomo"><span class="pdp-size-fomo-dot" aria-hidden="true"></span><span class="pdp-size-fomo-txt"></span></p>
+      </div>
+
+      <!-- QTY + ATC -->
+      <div class="pdp-buyrow">
+        <div class="pdp-qty" aria-label="Quantity">
+          <button id="pdpQtyMinus" aria-label="Decrease quantity">−</button>
+          <span id="pdpQty">1</span>
+          <button id="pdpQtyPlus" aria-label="Increase quantity">+</button>
+        </div>
+        <button class="btn btn-primary pdp-atc" id="pdpAtc"><span class="pdp-atc-add">Add to Cart — <span id="pdpAtcPrice">$150</span></span></button>
+      </div>
+      <button class="btn btn-dark btn-block pdp-buynow" id="pdpBuyNow">Buy Now</button>
+
+      <div class="pdp-express">Express checkout</div>
+      <div class="pdp-express-btns">
+        <button class="pdp-xbtn"><span class="pdp-xlogo">shop</span> Pay</button>
+        <button class="pdp-xbtn"><span class="pdp-xlogo">Pay</span>Pal</button>
+      </div>
+
+      <!-- DELIVERY -->
+      <div class="pdp-deliver">
+        <span class="pdp-deliver-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></span>
+        <span class="pdp-deliver-txt">Order today for estimated delivery <b id="pdpDelivery">—</b>. Free shipping over $120 across NZ &amp; AU.</span>
+      </div>
+
+      <!-- TRUST -->
+      <div class="pdp-trust">
+        <div class="pdp-trust-item"><span class="pdp-trust-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11Z"/></svg></span><span class="pdp-trust-lab">100% Waterproof Knit</span></div>
+        <div class="pdp-trust-item"><span class="pdp-trust-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c3-6 15-6 18 0-3 6-15 6-18 0Z"/><path d="M12 4v3M12 17v3"/></svg></span><span class="pdp-trust-lab">Lightweight Comfort</span></div>
+        <div class="pdp-trust-item"><span class="pdp-trust-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h12a3 3 0 1 0-3-3M4 16h9a3 3 0 1 1-3 3"/></svg></span><span class="pdp-trust-lab">Breathable Daily Wear</span></div>
+        <div class="pdp-trust-item"><span class="pdp-trust-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9a8 8 0 0 1 13-3l3 3M20 5v4h-4M20 15a8 8 0 0 1-13 3l-3-3M4 19v-4h4"/></svg></span><span class="pdp-trust-lab">30-Day Easy Returns</span></div>
+      </div>
+
+      <!-- QUICK ACCORDIONS -->
+      <div class="pdp-acc" id="pdpAcc">
+        <div class="pdp-acc-item open"><button class="pdp-acc-head">Why you'll love them<span class="pdp-acc-ico"></span></button><div class="pdp-acc-body"><div class="pdp-acc-body-inner">An easy everyday sneaker with waterproof knit, soft cushioning and a breathable feel — made for school runs, errands, dog walks and daily life.</div></div></div>
+        <div class="pdp-acc-item"><button class="pdp-acc-head">Size &amp; Fit<span class="pdp-acc-ico"></span></button><div class="pdp-acc-body"><div class="pdp-acc-body-inner">True to size with an easy slip-on feel. Order your usual size. Between sizes? Check the <button type="button" class="sg-inline-link" data-sizeguide-open>size guide</button> and size up for a roomier fit.</div></div></div>
+        <div class="pdp-acc-item"><button class="pdp-acc-head">Shipping &amp; Returns<span class="pdp-acc-ico"></span></button><div class="pdp-acc-body"><div class="pdp-acc-body-inner">Fast shipping from Auckland across NZ &amp; AU. Easy 30-day returns and exchanges if the fit isn't right.</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     2 · CUSTOMER REASON-TO-BUY
+     ============================================================ -->
+<section class="section section-pad urb-reasons" data-screen-label="Why people love it">
+  <div class="wrap">
+    <div class="urb-head reveal">
+      <span class="eyebrow no-dot">Loved for everyday life</span>
+      <h2>Why people love Urban Essentials</h2>
+    </div>
+    <div class="urb-reason-grid">
+      <div class="urb-reason reveal">
+        <span class="urb-reason-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12s3-7 9-7 9 7 9 7-3 7-9 7-9-7-9-7Z"/><circle cx="12" cy="12" r="2.5"/></svg></span>
+        <p class="urb-quote">“Perfect for school runs and rainy mornings.”</p>
+      </div>
+      <div class="urb-reason reveal d1">
+        <span class="urb-reason-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10Z"/></svg></span>
+        <p class="urb-quote">“Comfortable enough to wear all day.”</p>
+      </div>
+      <div class="urb-reason reveal d2">
+        <span class="urb-reason-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11Z"/></svg></span>
+        <p class="urb-quote">“Looks like a normal sneaker, but handles wet weather.”</p>
+      </div>
+      <div class="urb-reason reveal d3">
+        <span class="urb-reason-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20s2-8 8-8 8 8 8 8M12 9a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/></svg></span>
+        <p class="urb-quote">“Easy to style with jeans, leggings, uniforms and casual outfits.”</p>
+      </div>
+      <div class="urb-reason reveal d4">
+        <span class="urb-reason-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11a7 7 0 0 1 14 0v3a3 3 0 0 1-3 3h-1l-2 3-2-3H8a3 3 0 0 1-3-3Z"/></svg></span>
+        <p class="urb-quote">“Great for travel, errands and dog walks.”</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     3 · IMAGE-LED FEATURE ROWS
+     ============================================================ -->
+<section class="section wrap urb-features" data-screen-label="Feature rows">
+  <div class="urb-head reveal">
+    <span class="eyebrow no-dot">Built for everyday</span>
+    <h2>Easy comfort, rain or shine</h2>
+  </div>
+  <div class="urb-rows">
+    <article class="urb-row reveal">
+      <div class="urb-row-media"><image-slot id="urbFeat1" class="urb-row-fill" placeholder="Drop a rainy-walk lifestyle photo (4:3)"></image-slot><span class="urb-row-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11Z"/></svg>100% Waterproof</span></div>
+      <div class="urb-row-body"><span class="eyebrow no-dot">Waterproof for real life</span><h3>Dry feet, every day</h3><p>Made for rainy walks, wet pavements, school runs and everyday weather — your socks stay dry.</p></div>
+    </article>
+    <article class="urb-row flip reveal">
+      <div class="urb-row-media"><image-slot id="urbFeat2" class="urb-row-fill" placeholder="Drop a lightweight on-foot photo (4:3)"></image-slot><span class="urb-row-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c3-6 15-6 18 0-3 6-15 6-18 0Z"/><path d="M12 4v3M12 17v3"/></svg>Lightweight</span></div>
+      <div class="urb-row-body"><span class="eyebrow no-dot">Light on your feet</span><h3>Featherlight everyday feel</h3><p>Ultra-light cushioning keeps you comfortable through long days, errands and travel.</p></div>
+    </article>
+    <article class="urb-row reveal">
+      <div class="urb-row-media"><image-slot id="urbFeat3" class="urb-row-fill" placeholder="Drop a breathable knit detail photo (4:3)"></image-slot><span class="urb-row-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h12a3 3 0 1 0-3-3M4 16h9a3 3 0 1 1-3 3"/></svg>Breathable</span></div>
+      <div class="urb-row-body"><span class="eyebrow no-dot">Breathable knit comfort</span><h3>Soft, easy, all day</h3><p>A breathable knit upper keeps the sneaker feel light and fresh for everyday wear.</p></div>
+    </article>
+    <article class="urb-row flip reveal">
+      <div class="urb-row-media"><image-slot id="urbFeat4" class="urb-row-fill" placeholder="Drop a cushioned sole detail photo (4:3)"></image-slot><span class="urb-row-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 8h14M5 16h14"/></svg>All-Day Comfort</span></div>
+      <div class="urb-row-body"><span class="eyebrow no-dot">Cushioned &amp; flexible</span><h3>Walk-on-air softness</h3><p>A soft cushioned insole and flexible outsole move naturally with your foot, step after step.</p></div>
+    </article>
+    <article class="urb-row reveal">
+      <div class="urb-row-media"><image-slot id="urbFeat5" class="urb-row-fill" placeholder="Drop an everyday outfit/styling photo (4:3)"></image-slot><span class="urb-row-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-5 7-9 7-9s7 4 7 9a7 7 0 0 1-7 7Z"/></svg>Easy to Style</span></div>
+      <div class="urb-row-body"><span class="eyebrow no-dot">Easy everyday styling</span><h3>Goes with everything</h3><p>Looks like a normal sneaker — pairs with jeans, leggings, uniforms and casual outfits.</p></div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================
+     4 · EVERYDAY LIFE / DOG WALK
+     ============================================================ -->
+<section class="urb-everyday" data-screen-label="Everyday life">
+  <div class="urb-everyday-bg"><image-slot id="urbEveryday" class="urb-everyday-fill" placeholder="Drop a full-bleed dog-walk / everyday lifestyle photo (16:9)"></image-slot></div>
+  <span class="urb-everyday-scrim"></span>
+  <div class="wrap urb-everyday-inner">
+    <span class="eyebrow reveal">For the walks you actually do</span>
+    <h2 class="reveal">Made for the everyday walks you actually do</h2>
+    <p class="reveal d1">From dog walks to school runs, Urban Essentials gives you the comfort of a daily sneaker with the waterproof protection you wish every shoe had.</p>
+    <div class="urb-uses reveal d2">
+      <span class="urb-use"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11a7 7 0 0 1 14 0v3a3 3 0 0 1-3 3h-1l-2 3-2-3H8a3 3 0 0 1-3-3Z"/></svg>Dog walks</span>
+      <span class="urb-use"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 7l1.5 12h13L20 7M9 11v4M15 11v4"/></svg>School runs</span>
+      <span class="urb-use"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h15l-1.5 8h-12L6 6ZM6 6 5 3H3M8 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM18 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>Supermarket trips</span>
+      <span class="urb-use"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h13v4a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4ZM17 11h2a2 2 0 0 1 0 4h-2M6 4v2M10 4v2M14 4v2"/></svg>Coffee runs</span>
+      <span class="urb-use"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7zM7 17a2 2 0 1 0 0 0M17 17a2 2 0 1 0 0 0"/></svg>Travel days</span>
+      <span class="urb-use"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11Z"/></svg>Rainy city walks</span>
+      <span class="urb-use"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Everyday errands</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     5 · FAQ
+     ============================================================ -->
+<section class="section section-pad pdp-faq" data-screen-label="FAQ">
+  <div class="wrap">
+    <div class="pdp-faq-grid">
+      <aside class="pdp-faq-aside reveal">
+        <span class="eyebrow">Good to know</span>
+        <h2>Quick answers</h2>
+        <a href="mailto:support@oszea.com" class="pdp-faq-help">Contact our team <span class="arw">→</span></a>
+      </aside>
+      <div class="pdp-faq-list" id="pdpFaq">
+        <div class="pdp-faq-item open"><button class="pdp-faq-q">Are Urban Essentials waterproof?<span class="pdp-acc-ico"></span></button><div class="pdp-faq-a"><div class="pdp-faq-a-inner">Yes — they're designed with OSZEA's waterproof knit technology to help keep your feet dry in wet everyday conditions.</div></div></div>
+        <div class="pdp-faq-item"><button class="pdp-faq-q">Are they good for everyday wear?<span class="pdp-acc-ico"></span></button><div class="pdp-faq-a"><div class="pdp-faq-a-inner">Absolutely. Urban Essentials are made as a daily sneaker for walking, errands, school, casual workdays and travel.</div></div></div>
+        <div class="pdp-faq-item"><button class="pdp-faq-q">Are they breathable?<span class="pdp-acc-ico"></span></button><div class="pdp-faq-a"><div class="pdp-faq-a-inner">Yes, the knit upper is designed to feel breathable while still offering waterproof protection.</div></div></div>
+        <div class="pdp-faq-item"><button class="pdp-faq-q">Are they good for dog walks?<span class="pdp-acc-ico"></span></button><div class="pdp-faq-a"><div class="pdp-faq-a-inner">They're a great option for dog walks — especially when the grass, pavement or weather is wet.</div></div></div>
+        <div class="pdp-faq-item"><button class="pdp-faq-q">How do they fit?<span class="pdp-acc-ico"></span></button><div class="pdp-faq-a"><div class="pdp-faq-a-inner">Urban Essentials fit true to size with an easy slip-on feel. Order your usual size, or size up for a roomier fit. See the <button type="button" class="sg-inline-link" data-sizeguide-open>size guide</button>.</div></div></div>
+        <div class="pdp-faq-item"><button class="pdp-faq-q">Can I exchange the size?<span class="pdp-acc-ico"></span></button><div class="pdp-faq-a"><div class="pdp-faq-a-inner">Yes. We offer easy 30-day returns and exchanges — if the fit isn't right, reach out and we'll help you swap sizes.</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     6 · YOU MAY ALSO LIKE
+     ============================================================ -->
+<section class="section section-pad wrap" data-screen-label="Related products">
+  <div class="section-head reveal"><span class="eyebrow">More from OSZEA</span><h2>You may also like</h2></div>
+  <div class="pdp-related-grid">
+    <a class="pdp-prod reveal" href="Tasman Essentials.html">
+      <div class="pdp-prod-media"><span class="pdp-prod-flag">Hero Product</span><div class="ph"><span class="ph-label">[ TASMAN ESSENTIALS — PRODUCT ]</span></div><div class="pdp-prod-swatches"><span class="pdp-prod-swatch" style="background:#0D1B26"></span><span class="pdp-prod-swatch" style="background:#cdb393"></span><span class="pdp-prod-swatch" style="background:#5d8893"></span></div></div>
+      <div class="pdp-prod-body"><span class="pdp-prod-tag">Waterproof · Hero</span><span class="pdp-prod-name">Tasman Essentials</span><p class="pdp-prod-desc">Our premium all-weather waterproof sneaker, built for everyday and beyond.</p><div class="pdp-prod-foot"><span class="pdp-prod-price">$190</span><span class="pdp-prod-rate"><span class="s">★</span> 4.8</span></div></div>
+    </a>
+    <a class="pdp-prod reveal d1" href="#">
+      <div class="pdp-prod-media"><span class="pdp-prod-flag">Easy On</span><div class="ph"><span class="ph-label">[ MELBOURNE CHELSEA — PRODUCT ]</span></div><div class="pdp-prod-swatches"><span class="pdp-prod-swatch" style="background:#262b30"></span><span class="pdp-prod-swatch" style="background:#6b5440"></span></div></div>
+      <div class="pdp-prod-body"><span class="pdp-prod-tag">Waterproof · Chelsea</span><span class="pdp-prod-name">Melbourne Chelsea</span><p class="pdp-prod-desc">Slip-on waterproof Chelsea boot for rainy-day style and easy comfort.</p><div class="pdp-prod-foot"><span class="pdp-prod-price">$170</span><span class="pdp-prod-rate"><span class="s">★</span> 4.7</span></div></div>
+    </a>
+    <a class="pdp-prod reveal d2" href="#">
+      <div class="pdp-prod-media"><span class="pdp-prod-flag">Add On</span><div class="ph"><span class="ph-label">[ ELEMENTS BUCKET HAT — PRODUCT ]</span></div><div class="pdp-prod-swatches"><span class="pdp-prod-swatch" style="background:#262b30"></span><span class="pdp-prod-swatch" style="background:#5d8893"></span></div></div>
+      <div class="pdp-prod-body"><span class="pdp-prod-tag">Elements · Waterproof</span><span class="pdp-prod-name">Elements Bucket Hat</span><p class="pdp-prod-desc">Water-repellent bucket hat to keep the rain off on everyday walks.</p><div class="pdp-prod-foot"><span class="pdp-prod-price">$55</span><span class="pdp-prod-rate"><span class="s">★</span> 4.7</span></div></div>
+    </a>
+    <a class="pdp-prod reveal d3" href="#">
+      <div class="pdp-prod-media"><span class="pdp-prod-flag">For Kids</span><div class="ph"><span class="ph-label">[ KIDS MELBOURNE CHELSEA — PRODUCT ]</span></div><div class="pdp-prod-swatches"><span class="pdp-prod-swatch" style="background:#1c2026"></span><span class="pdp-prod-swatch" style="background:#7a8a93"></span></div></div>
+      <div class="pdp-prod-body"><span class="pdp-prod-tag">Kids · Waterproof</span><span class="pdp-prod-name">Kids Melbourne Chelsea</span><p class="pdp-prod-desc">Waterproof protection for puddle hunters — easy-on comfort for little feet.</p><div class="pdp-prod-foot"><span class="pdp-prod-price">$110</span><span class="pdp-prod-rate"><span class="s">★</span> 4.8</span></div></div>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ STICKY ADD-TO-CART BAR ============ -->
+<div class="pdp-sticky" id="pdpSticky" data-screen-label="Sticky add-to-cart">
+  <div class="pdp-sticky-inner">
+    <div class="pdp-sticky-prod">
+      <div class="pdp-sticky-thumb"><div class="ph" id="pdpStickyThumb"></div></div>
+      <div><div class="pdp-sticky-name">Urban Essentials</div><div class="pdp-sticky-var" id="pdpStickyVar">Midnight Shadow · Men · Select size</div></div>
+    </div>
+    <div class="pdp-sticky-spacer"></div>
+    <div class="pdp-sticky-controls">
+      <select class="pdp-sticky-select" id="pdpStickySize" aria-label="Quick size select"></select>
+      <div class="pdp-qty" aria-label="Quantity"><button id="pdpStickyMinus" aria-label="Decrease quantity">−</button><span id="pdpStickyQty">1</span><button id="pdpStickyPlus" aria-label="Increase quantity">+</button></div>
+      <span class="pdp-sticky-price" id="pdpStickyPrice">$150</span>
+      <button class="btn btn-primary pdp-sticky-atc" id="pdpStickyAtc">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SIZE GUIDE MODAL ============ -->
+<div class="sg-modal" id="sgModal" aria-hidden="true" data-screen-label="Size guide popup">
+  <div class="sg-scrim" data-sizeguide-close></div>
+  <div class="sg-dialog" role="dialog" aria-modal="true" aria-label="Size guide">
+    <div class="sg-head">
+      <div><span class="eyebrow no-dot">Size &amp; Fit</span><h3>Find your size</h3><p class="sg-sub">True to size with an easy slip-on feel. Size up for a roomier fit.</p></div>
+      <button class="sg-close" data-sizeguide-close aria-label="Close size guide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="pdp-sizetable-wrap">
+      <div class="pdp-sizetable-tabs" id="pdpSGTabs">
+        <button class="pdp-sizetable-tab active" data-sg="men">Men</button>
+        <button class="pdp-sizetable-tab" data-sg="women">Women</button>
+      </div>
+      <div class="sf" id="sizeFinder">
+        <div class="sf-row"><span class="sf-step-lab"><span class="sf-num">1</span>Your size system</span><div class="sf-systems" id="sfSystems" role="tablist" aria-label="Size system"><button class="active" data-sys="aus">AU / US</button><button data-sys="uk">UK</button><button data-sys="eu">EU</button><button data-sys="cm">JP (cm)</button></div></div>
+        <div class="sf-row"><span class="sf-step-lab"><span class="sf-num">2</span>Pick your size</span><div class="sf-values" id="sfValues"></div></div>
+        <div class="sf-result" id="sfResult" hidden>
+          <div class="sf-result-main"><span class="sf-result-lab">Your OSZEA size</span><span class="sf-result-size" id="sfResultSize">—</span><span class="sf-result-sys">AU / US</span></div>
+          <div class="sf-result-conv" id="sfResultConv"></div>
+          <button class="btn btn-primary btn-sm sf-result-cta" id="sfResultCta">Select this size <span class="arw">→</span></button>
+        </div>
+      </div>
+      <div class="pdp-sizetable-body active" data-sgbody="men">
+        <table class="pdp-sizetable"><thead><tr><th>AU / US</th><th>UK</th><th>EU</th><th>CM (JP)</th></tr></thead><tbody>
+          <tr><td>7</td><td>6</td><td>39</td><td>24.5 cm</td></tr>
+          <tr><td>8</td><td>7</td><td>40.5</td><td>25.5 cm</td></tr>
+          <tr><td>9</td><td>8</td><td>42</td><td>26.5 cm</td></tr>
+          <tr><td>10</td><td>9</td><td>43</td><td>27.5 cm</td></tr>
+          <tr><td>11</td><td>10</td><td>44.5</td><td>28.5 cm</td></tr>
+          <tr><td>12</td><td>11</td><td>45</td><td>29.5 cm</td></tr>
+          <tr><td>13</td><td>12</td><td>46</td><td>30.5 cm</td></tr>
+        </tbody></table>
+      </div>
+      <div class="pdp-sizetable-body" data-sgbody="women">
+        <table class="pdp-sizetable"><thead><tr><th>AU / US</th><th>UK</th><th>EU</th><th>CM (JP)</th></tr></thead><tbody>
+          <tr><td>5.5</td><td>3.5</td><td>36</td><td>22.5 cm</td></tr>
+          <tr><td>6.5</td><td>4.5</td><td>37</td><td>23.5 cm</td></tr>
+          <tr><td>7</td><td>5</td><td>38</td><td>24.0 cm</td></tr>
+          <tr><td>7.5</td><td>5.5</td><td>38.5</td><td>24.5 cm</td></tr>
+          <tr><td>8</td><td>6</td><td>39</td><td>25.0 cm</td></tr>
+          <tr><td>8.5</td><td>6.5</td><td>40</td><td>25.5 cm</td></tr>
+          <tr><td>9</td><td>7</td><td>40.5</td><td>26.0 cm</td></tr>
+          <tr><td>10</td><td>8</td><td>41.5</td><td>27.0 cm</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+    <div class="sg-measure">
+      <h4 class="sg-measure-title">How to measure</h4>
+      <div class="sg-measure-grid">
+        <div class="sg-measure-item"><span class="sg-measure-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M6 9l-3 3 3 3"/><path d="M18 9l3 3-3 3"/></svg></span><div class="sg-measure-txt"><h5>True to size</h5><p>Urban Essentials fit true to size. Order your usual sneaker size for the best everyday fit.</p></div></div>
+        <div class="sg-measure-item"><span class="sg-measure-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5h13a4 4 0 0 0 4-4V11a2 2 0 0 0-2-2l-5 .5L9 7H4a1 1 0 0 0-1 1Z"/></svg></span><div class="sg-measure-txt"><h5>Between sizes?</h5><p>Size up for a roomier, relaxed feel, or stay true to size for a snugger fit.</p></div></div>
+        <div class="sg-measure-item"><span class="sg-measure-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 8h3M3 12h4M3 16h3"/></svg></span><div class="sg-measure-txt"><h5>Easy slip-on</h5><p>A flexible knit upper makes them easy to slip on and off for everyday wear.</p></div></div>
+        <div class="sg-measure-item"><span class="sg-measure-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9a8 8 0 0 1 13-3l3 3M20 5v4h-4M20 15a8 8 0 0 1-13 3l-3-3M4 19v-4h4"/></svg></span><div class="sg-measure-txt"><h5>30-day exchange</h5><p>Not the right fit? Reach out within 30 days and we'll gladly help with an exchange.</p></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" data-screen-label="Footer">
+  <canvas class="foot-water" id="footWater" aria-hidden="true"></canvas>
+  <div class="foot-ticker"><div class="foot-ticker-track" id="tickerTrack"></div></div>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="fb-statement">Forget the <span class="teal">Forecast.</span></div>
+        <p class="fb-sub">Waterproof comfort made for real NZ &amp; AU weather.</p>
+        <div class="foot-news">
+          <div class="fn-lab">Stay Dry With Us</div>
+          <form class="foot-news-form" novalidate><input type="email" placeholder="Enter your email" aria-label="Email" required><button class="btn btn-primary btn-sm" type="submit">Join</button></form>
+        </div>
+      </div>
+      <div class="foot-col"><h4>Shop</h4><ul><li><a href="#">Men</a></li><li><a href="#">Women</a></li><li><a href="#">Kids</a></li><li><a href="#">Elements</a></li><li><a href="#">Add-ons</a></li><li><a href="Tasman Essentials.html">Tasman Essentials</a></li><li><a href="#">Urban Essentials</a></li></ul></div>
+      <div class="foot-col"><h4>Brand</h4><ul><li><a href="Our Story.html">Our Story</a></li><li><a href="ZEA-TEX Technology.html">ZEA-TEX™</a></li><li><a href="#">Waterproof Comfort</a></li><li><a href="#">Sustainability</a></li><li><a href="#">Reviews</a></li></ul></div>
+      <div class="foot-col"><h4>Support</h4><ul><li><a href="#">Contact Us</a></li><li><a href="#">Shipping</a></li><li><a href="#">Returns &amp; Exchanges</a></li><li><a href="#">Size Guide</a></li><li><a href="#">Terms &amp; Conditions</a></li><li><a href="Privacy Policy.html">Privacy Policy</a></li></ul></div>
+      <div class="foot-col"><h4>RainClub</h4><ul><li><a href="#">Join RainClub</a></li><li><a href="#">@oszeaofficial</a></li><li><a href="#">#RainClub</a></li><li><a href="#">Customer Stories</a></li></ul></div>
+    </div>
+    <div class="foot-watermark" aria-hidden="true"><span class="fw-word">OSZEA</span></div>
+    <div class="foot-bottom">
+      <div class="fb-left"><span>© 2026 OSZEA Footwear. All rights reserved.</span><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div>
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap"><div class="foot-pay"><span class="pay">VISA</span><span class="pay">MC</span><span class="pay">AMEX</span><span class="pay">PAY</span><span class="pay">GPAY</span></div><span class="foot-cur">🇳🇿 NZD / AUD ▾</span></div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mmenu" id="mmenu">
+  <div class="scrim"></div>
+  <div class="panel">
+    <div class="m-top"><img src="assets/oszea-logo.png" alt="OSZEA"><button class="icon-btn" data-mclose aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+    <a class="m-link" href="#">Men <span class="arw">→</span></a>
+    <a class="m-link" href="#">Women <span class="arw">→</span></a>
+    <a class="m-link" href="#">Kids <span class="arw">→</span></a>
+    <a class="m-link" href="#">Elements <span class="arw">→</span></a>
+    <a class="m-link" href="#">Add Ons <span class="arw">→</span></a>
+  </div>
+</div>
+
+<div class="toast-zone" id="toastZone"></div>
+
+<script src="image-slot.js" defer></script>
+<script src="js/video-slot.js" defer></script>
+<script src="js/story.js" defer></script>
+<script src="js/urban.js" defer></script>
+</body>
+</html>

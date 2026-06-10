@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Returns &amp; Exchanges — Easy returns, simple exchanges · OSZEA</title>
+<meta name="description" content="Try your OSZEAs at home. Easy 30-day returns and simple exchanges across New Zealand and Australia. Start a return or exchange online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/map-footer.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/support-pages.css">
+</head>
+<body>
+
+<!-- ============ ANNOUNCEMENT BAR ============ -->
+<div class="announce" data-screen-label="Announcement bar">
+  <div class="announce-inner">
+    <div class="announce-spacer"></div>
+    <div class="announce-msgs">
+      <div class="announce-msg active"><span class="dot"></span><span>Easy <b>30-day</b> returns &amp; exchanges across NZ &amp; AU — real people, no hassle.</span></div>
+    </div>
+    <div class="announce-side">
+      <button class="cur-sel"><span class="flag">🇳🇿</span><span>NZD</span><span class="label-hide" style="opacity:.5">/ AUD</span></button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<div class="nav-zone" id="navZone">
+  <nav class="nav wrap-nav" aria-label="Primary">
+    <div class="nav-links desktop">
+      <a class="nav-link" href="#">Men</a>
+      <a class="nav-link" href="#">Women</a>
+      <a class="nav-link" href="#">Kids</a>
+      <a class="nav-link" href="#">Elements</a>
+      <a class="nav-link" href="ZEA-TEX Technology.html">ZEA-TEX™</a>
+    </div>
+    <button class="hamburger icon-btn mobile-only" id="hamBtn" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <a class="nav-logo" href="index.html" aria-label="OSZEA home"><img src="assets/oszea-logo.png" alt="OSZEA"></a>
+    <div class="nav-actions">
+      <button class="icon-btn hide-mobile" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+      <button class="icon-btn hide-mobile" aria-label="Account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+      </button>
+    </div>
+  </nav>
+</div>
+
+<main data-screen-label="Returns & Exchanges page">
+
+<!-- ============ BREADCRUMB ============ -->
+<div class="ct-crumb">
+  <div class="wrap">
+    <a href="index.html">Home</a><span class="sep">/</span><a href="Contact Us.html">Support</a><span class="sep">/</span><span class="here">Returns &amp; Exchanges</span>
+  </div>
+</div>
+
+<!-- ============ 1. HERO ============ -->
+<section class="ct-hero section" data-screen-label="Hero">
+  <div class="wrap">
+    <div class="ct-hero-card reveal">
+      <div class="ct-hero-text">
+        <span class="eyebrow">Returns &amp; Exchanges</span>
+        <h1 class="ct-hero-h1">Easy returns. <span class="accent-word">Simple exchanges.</span></h1>
+        <p class="ct-hero-sub">Try your OSZEAs at home. If something is not right, we’ll help you sort it.</p>
+        <div class="sp-weather">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6h6"/><path d="M3 13a9 9 0 1 0 2.5-6.4L3 9"/></svg>
+          30-day returns &amp; exchanges — no stress, no jargon.
+        </div>
+        <div class="ct-hero-cta">
+          <a href="#start" class="btn btn-primary" data-scroll data-focus="#rtOrder">Start a return or exchange <span class="arw">→</span></a>
+          <a href="Contact Us.html" class="btn btn-dark">Contact support <span class="arw">→</span></a>
+        </div>
+        <div class="ct-hero-trust"><span class="pulse"></span> Most exchanges sorted within 24 hours on business days</div>
+      </div>
+      <div class="ct-hero-media">
+        <div class="ph"><span class="ph-label">[ Returns Hero — OSZEA shoes and box, ready to try on indoors ]</span></div>
+        <!-- Shopify: replace .ph with <img class="ph-img" src="…" alt="…"> -->
+        <canvas class="ct-hero-rain" id="heroRain" aria-hidden="true"></canvas>
+        <div class="ct-hero-float">
+          <span class="hf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s7 3 7 8c0 6-7 12-7 12S5 16 5 10c0-5 7-8 7-8Z"/><path d="m9 11 2 2 4-4"/></svg></span>
+          <span><span class="hf-t">Try them indoors first</span><br><span class="hf-s">Keeps your OSZEAs returnable</span></span>
+        </div>
+      </div>
+    </div>
+    <div class="ct-scrollcue">Start your return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg></div>
+  </div>
+</section>
+
+<!-- ============ 2. RETURN / EXCHANGE START CARD (inline, guided) ============ -->
+<section class="sp-lookup-sec section section-pad" id="start" data-screen-label="Start return">
+  <div class="wrap">
+    <div class="sp-lookup reveal">
+      <div class="sp-lookup-pad">
+        <div class="sp-lookup-head">
+          <span class="sp-lookup-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6h6"/><path d="M3 13a9 9 0 1 0 2.5-6.4L3 9"/></svg></span>
+          <div>
+            <span class="eyebrow">Self-service</span>
+            <h2>Start a return or exchange</h2>
+            <p>Pop in your order number and checkout email, and we’ll guide you through the next few steps.</p>
+          </div>
+        </div>
+
+        <!-- STEP 1 — order lookup -->
+        <div id="rtStartBox">
+          <form id="rtStartForm" novalidate>
+            <div class="sp-lookup-grid">
+              <div class="cf-field">
+                <label for="rtOrder">Order number</label>
+                <div class="cf-inwrap">
+                  <svg class="cf-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16v13H4z"/><path d="M4 7l2-3h12l2 3"/><path d="M9 11h6"/></svg>
+                  <input class="cf-input" id="rtOrder" type="text" placeholder="#OSZEA1234 or order number" required>
+                </div>
+                <div class="cf-err">Please enter your order number</div>
+              </div>
+              <div class="cf-field">
+                <label for="rtEmail">Email address</label>
+                <div class="cf-inwrap">
+                  <svg class="cf-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                  <input class="cf-input" id="rtEmail" type="email" placeholder="Enter the email from your original order" required>
+                </div>
+                <div class="cf-err">Please enter a valid email</div>
+              </div>
+            </div>
+            <div class="sp-lookup-foot">
+              <button class="btn btn-primary ohub-submit" type="submit"><span class="spin"></span><span class="lab">Start return or exchange</span> <span class="arw">→</span></button>
+              <p class="sp-lookup-helper"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span>Use the email address from your original order. Your details stay private and are only matched to your order.</span></p>
+            </div>
+          </form>
+        </div>
+
+        <!-- STEP 2 — guided request (reuses exchange form fields) -->
+        <div class="sp-rt-stepwrap" id="rtSteps">
+          <div class="sp-rt-orderbar">
+            <span class="rtob-l">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#3BB0AA" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 6"/></svg>
+              Order found — let’s sort the details
+            </span>
+            <span class="rtob-chip"><span class="d"></span><span id="rtOrderChip">#1024</span></span>
+          </div>
+
+          <form id="rtFlowForm" novalidate>
+            <div class="sp-field-block">
+              <span class="sp-block-lab">What would you like to do?</span>
+              <div class="sp-seg">
+                <label class="sp-seg-opt">
+                  <input type="radio" name="rtMode" value="exchange" checked>
+                  <span class="sso-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6h6"/><path d="M3 13a9 9 0 1 0 2.5-6.4L3 9"/></svg></span>
+                  <span><span class="sso-t">Exchange</span><span class="sso-s">Different size, colour or product</span></span>
+                </label>
+                <label class="sp-seg-opt">
+                  <input type="radio" name="rtMode" value="return">
+                  <span class="sso-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14 4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 6 6v2"/></svg></span>
+                  <span><span class="sso-t">Return</span><span class="sso-s">Send it back for a refund</span></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="cf-grid" style="margin-top:18px">
+              <div class="cf-field full">
+                <label for="rtItem">Which item?</label>
+                <div class="cf-inwrap">
+                  <svg class="cf-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8l4-4h8l4 4-3 2v10H7V10z"/></svg>
+                  <input class="cf-input" id="rtItem" type="text" placeholder="e.g. Tasman — Dusk Blue" required>
+                </div>
+                <div class="cf-err">Please tell us which item</div>
+              </div>
+              <div class="cf-field">
+                <label for="rtCurSize">Current size <span class="opt">(NZ/AU)</span></label>
+                <div class="cf-inwrap">
+                  <svg class="cf-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14 14 4l6 6L10 20z"/><path d="M8 10l2 2M11 7l2 2"/></svg>
+                  <select class="cf-select" id="rtCurSize" required>
+                    <option value="" disabled selected>Select</option>
+                    <option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option>
+                  </select>
+                </div>
+                <div class="cf-err">Select your current size</div>
+              </div>
+              <div class="cf-field" id="rtNewSizeRow">
+                <label for="rtNewSize">New size <span class="opt">(NZ/AU)</span></label>
+                <div class="cf-inwrap">
+                  <svg class="cf-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14 14 4l6 6L10 20z"/><path d="M8 10l2 2M11 7l2 2"/></svg>
+                  <select class="cf-select" id="rtNewSize">
+                    <option value="" disabled selected>Select</option>
+                    <option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option>
+                  </select>
+                </div>
+                <div class="cf-err">Select the size you’d like</div>
+              </div>
+              <div class="cf-field full">
+                <label for="rtReason">Reason</label>
+                <div class="cf-inwrap">
+                  <svg class="cf-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg>
+                  <select class="cf-select" id="rtReason">
+                    <option value="small">Too small</option>
+                    <option value="big">Too big</option>
+                    <option value="colour">Different colour</option>
+                    <option value="mind">Changed my mind</option>
+                    <option value="wrong">Wrong item received</option>
+                    <option value="faulty">Faulty / damaged</option>
+                    <option value="waterproof">Waterproof concern</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="cf-field full">
+                <label for="rtNotes">Anything else? <span class="opt">(optional)</span></label>
+                <div class="cf-inwrap">
+                  <svg class="cf-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="top:22px;transform:none"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.3L3 21l1.5-6A8.5 8.5 0 1 1 21 11.5z"/></svg>
+                  <textarea class="cf-textarea" id="rtNotes" placeholder="Tell us anything that helps us sort it…" style="min-height:90px"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-confirm">
+              <label class="cf-agree">
+                <input type="checkbox" id="rtConfirm">
+                <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 6"/></svg></span>
+                <span>I confirm my OSZEAs were tried indoors and are in original, returnable condition.</span>
+              </label>
+            </div>
+
+            <div class="sp-lookup-foot">
+              <button class="btn btn-primary ohub-submit" type="submit"><span class="spin"></span><span class="lab">Get my next steps</span> <span class="arw">→</span></button>
+              <p class="sp-lookup-helper"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span>NZ returns ship via <b>GoSweetSpot</b>; AU via <b>Aramex</b>. Return shipping fees may apply depending on the reason. Subject to our returns policy.</span></p>
+            </div>
+          </form>
+        </div>
+
+        <!-- STEP 3 — success / next steps -->
+        <div class="ohub-success" id="rtSuccess" style="padding-top:8px">
+          <span class="os-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 6"/></svg></span>
+          <h3>Your <span id="rtModeLabel">request</span> has started</h3>
+          <div class="ohub-orderchip"><span class="d"></span><span id="rtSuccessChip">#1024</span></div>
+          <p>We’ve got your details. Here’s what happens next:</p>
+          <ul class="sp-next">
+            <li><span class="snx">1</span><span>We’ll email your next steps and a prepaid return label shortly.</span></li>
+            <li><span class="snx">2</span><span>Pop your OSZEAs back in their box and attach the label.</span></li>
+            <li><span class="snx">3</span><span>Once received and checked, we’ll process your exchange or refund.</span></li>
+          </ul>
+          <div class="os-cta" style="max-width:420px;margin:24px auto 0">
+            <a class="btn btn-primary" id="rtGo" href="#" target="_blank" rel="noopener">Continue to returns portal <span class="arw">→</span></a>
+            <a class="btn btn-ghost" href="Contact Us.html">Need a hand? Contact support</a>
+          </div>
+          <div class="os-note">A confirmation has been sent to your email</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. POLICY SUMMARY CARDS ============ -->
+<section class="section section-pad" data-screen-label="Returns promise">
+  <div class="wrap">
+    <div class="ct-head-center reveal">
+      <span class="eyebrow">Peace of mind</span>
+      <h2>Our returns promise</h2>
+      <p>Buying weather-ready footwear online should feel safe. Here’s how we’ve got your back.</p>
+    </div>
+    <div class="sp-feat-grid">
+      <div class="sp-feat reveal">
+        <span class="spf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <h3>30-day returns &amp; exchanges</h3>
+        <p>You can request a return or exchange within 30 days of receiving your order.</p>
+        <span class="spf-tag">30 days from delivery</span>
+      </div>
+      <div class="sp-feat reveal d1">
+        <span class="spf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9H3z"/><path d="M9 20v-6h6v6"/></svg></span>
+        <h3>Try them indoors</h3>
+        <p>Please try your OSZEAs indoors first to keep them in returnable condition.</p>
+        <span class="spf-tag">Keeps them returnable</span>
+      </div>
+      <div class="sp-feat reveal d2">
+        <span class="spf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6h6"/><path d="M3 13a9 9 0 1 0 2.5-6.4L3 9"/></svg></span>
+        <h3>Easy exchanges</h3>
+        <p>Need a different size or colour? We’ll help you find the right fit.</p>
+        <span class="spf-tag">Size &amp; colour swaps</span>
+      </div>
+      <div class="sp-feat reveal d3">
+        <span class="spf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.3L3 21l1.5-6A8.5 8.5 0 1 1 21 11.5z"/></svg></span>
+        <h3>Support when you need it</h3>
+        <p>Our team is here to help if your order arrives damaged, faulty, or incorrect.</p>
+        <span class="spf-tag">Real humans, fast replies</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. HOW RETURNS WORK ============ -->
+<section class="ct-form-sec section section-pad" data-screen-label="How it works">
+  <div class="wrap">
+    <div class="ct-head-center reveal">
+      <span class="eyebrow">Step by step</span>
+      <h2>How it works</h2>
+      <p>Four simple steps from request to refund or exchange.</p>
+    </div>
+    <div class="sp-timeline">
+      <div class="sp-step reveal">
+        <div class="sps-num"><span class="sps-idx">1</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16v13H4z"/><path d="M4 7l2-3h12l2 3"/><path d="M9 11h6"/></svg></div>
+        <div class="sps-body">
+          <h3>Enter your order details</h3>
+          <p>Use your order number and checkout email.</p>
+        </div>
+      </div>
+      <div class="sp-step reveal d1">
+        <div class="sps-num"><span class="sps-idx">2</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6h6"/><path d="M3 13a9 9 0 1 0 2.5-6.4L3 9"/></svg></div>
+        <div class="sps-body">
+          <h3>Tell us what you need</h3>
+          <p>Choose return, exchange, size change, or product issue.</p>
+        </div>
+      </div>
+      <div class="sp-step reveal d2">
+        <div class="sps-num"><span class="sps-idx">3</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+        <div class="sps-body">
+          <h3>Receive instructions</h3>
+          <p>We’ll send the next steps based on your request.</p>
+        </div>
+      </div>
+      <div class="sp-step reveal d3">
+        <div class="sps-num"><span class="sps-idx">4</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v8H3zM14 9h4l3 3v3h-7z"/><circle cx="7" cy="17" r="1.8"/><circle cx="17.5" cy="17" r="1.8"/></svg></div>
+        <div class="sps-body">
+          <h3>Send it back</h3>
+          <p>Once received and checked, we’ll process your exchange or refund.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. RETURN CONDITION GUIDE ============ -->
+<section class="section section-pad" data-screen-label="Condition guide">
+  <div class="wrap">
+    <div class="ct-head-center reveal">
+      <span class="eyebrow">Good to know</span>
+      <h2>What can be returned?</h2>
+      <p>A quick guide so there are no surprises.</p>
+    </div>
+    <div class="sp-guide-grid">
+      <div class="sp-guide-card ok reveal">
+        <div class="sgc-head">
+          <span class="sgc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 6"/></svg></span>
+          <div><span class="sgc-k">Returnable</span><h3>Good to go</h3></div>
+        </div>
+        <ul class="sp-checklist">
+          <li><span class="sck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 6"/></svg></span> Items requested within 30 days</li>
+          <li><span class="sck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 6"/></svg></span> Shoes tried indoors only</li>
+          <li><span class="sck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 6"/></svg></span> Original condition</li>
+          <li><span class="sck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 6"/></svg></span> Original packaging where possible</li>
+          <li><span class="sck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 6"/></svg></span> No excessive wear or damage</li>
+        </ul>
+      </div>
+      <div class="sp-guide-card no reveal d1">
+        <div class="sgc-head">
+          <span class="sgc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span>
+          <div><span class="sgc-k">Not returnable</span><h3>Can’t accept</h3></div>
+        </div>
+        <ul class="sp-checklist">
+          <li><span class="sck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span> Heavily worn items</li>
+          <li><span class="sck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span> Damaged by misuse</li>
+          <li><span class="sck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span> Items outside the return window</li>
+          <li><span class="sck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span> Final sale items, if marked final sale</li>
+          <li><span class="sck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span> Items missing important return details</li>
+        </ul>
+        <div class="sp-guide-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg>
+          <span><b>Return shipping fees may apply</b> depending on the reason for return. If your item is faulty, damaged, or incorrect, contact support and we’ll cover it.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. EXCHANGES ============ -->
+<section class="ct-form-sec section section-pad" data-screen-label="Exchanges">
+  <div class="wrap">
+    <div class="ct-head-center reveal">
+      <span class="eyebrow">The easy swap</span>
+      <h2>Need a different size or colour?</h2>
+      <p>Exchanges are often the easiest way to get the right OSZEA fit.</p>
+    </div>
+    <div class="sp-trio-grid">
+      <div class="sp-trio reveal">
+        <span class="spt-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14 14 4l6 6L10 20z"/><path d="M8 10l2 2M11 7l2 2M14 12l2 2"/></svg></span>
+        <h3>Size exchange</h3>
+        <p>Choose a better size if the fit is not right.</p>
+      </div>
+      <div class="sp-trio reveal d1">
+        <span class="spt-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="6.5" cy="11.5" r="2.5"/><circle cx="17" cy="14" r="2.5"/><circle cx="9" cy="18" r="2.5"/></svg></span>
+        <h3>Colour exchange</h3>
+        <p>Swap for another available colour.</p>
+      </div>
+      <div class="sp-trio reveal d2">
+        <span class="spt-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8l4-4h8l4 4-3 2v10H7V10z"/></svg></span>
+        <h3>Product exchange</h3>
+        <p>If available, we’ll help you choose the right product.</p>
+      </div>
+    </div>
+    <div class="sp-trio-cta">
+      <a href="#start" class="btn btn-primary" data-scroll data-focus="#rtOrder">Start an exchange <span class="arw">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. FAULTY / WATERPROOF ISSUE ============ -->
+<section class="section section-pad" data-screen-label="Something not right">
+  <div class="wrap">
+    <div class="ct-head-center reveal">
+      <span class="eyebrow">We’ll make it right</span>
+      <h2>Something not right?</h2>
+      <p>If your OSZEA item arrives faulty, damaged, incorrect, or has a waterproof issue, we want to help.</p>
+    </div>
+    <div class="sp-trio-grid">
+      <div class="sp-trio reveal">
+        <span class="spt-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.3 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.3a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/></svg></span>
+        <h3>Faulty or damaged item</h3>
+        <p>Contact us with your order number and photos so we can review it.</p>
+      </div>
+      <div class="sp-trio reveal d1">
+        <span class="spt-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8l4-4h8l4 4-3 2v10H7V10z"/><path d="m9 13 2 2 4-4"/></svg></span>
+        <h3>Wrong item received</h3>
+        <p>We’ll help correct the order as quickly as possible.</p>
+      </div>
+      <div class="sp-trio reveal d2">
+        <span class="spt-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s7 3 7 8c0 6-7 12-7 12S5 16 5 10c0-5 7-8 7-8Z"/><path d="M9 11h6"/></svg></span>
+        <h3>Waterproof concern</h3>
+        <p>If your shoes are not performing as expected, contact us so we can assess and help.</p>
+      </div>
+    </div>
+    <div class="sp-trio-cta">
+      <a href="Contact Us.html" class="btn btn-dark">Contact support <span class="arw">→</span></a>
+    </div>
+    <p style="text-align:center;margin-top:18px;font-family:var(--font-mono);font-size:11px;letter-spacing:.02em;color:var(--grey-400)">Tip: have your order number and a couple of photos ready — it helps us sort it faster.</p>
+  </div>
+</section>
+
+<!-- ============ 8. FAQ ============ -->
+<section class="ct-faq section section-pad ct-form-sec" data-screen-label="Returns FAQ">
+  <div class="wrap">
+    <div class="ct-head-center reveal">
+      <span class="eyebrow">Quick answers</span>
+      <h2>Returns questions, answered</h2>
+    </div>
+    <div class="ct-faq-wrap reveal d1">
+      <div class="faq-list" id="faqList">
+        <div class="faq-item">
+          <button class="faq-q" type="button">How long do I have to return or exchange? <span class="faq-sign"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">You can request a return or exchange within 30 days of receiving your order.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">Can I exchange for another size? <span class="faq-sign"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. If the size you need is available, we can help arrange an exchange.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">Can I return worn shoes? <span class="faq-sign"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Items should be in original condition. Please try shoes indoors first to keep them returnable.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">What if my item is faulty? <span class="faq-sign"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Contact OSZEA support with your order number and photos so the team can review and help.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">Do return shipping fees apply? <span class="faq-sign"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Return shipping fees may apply depending on the reason for return. If the item is faulty, damaged, or incorrect, contact support so we can assist.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">How long does a refund take? <span class="faq-sign"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Once your return is received and checked, the refund will be processed to the original payment method. Bank processing times may vary.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">Are sale items returnable? <span class="faq-sign"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Some sale or final sale items may not be eligible for return. Please check the product page and order confirmation details.</div></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:38px">
+        <a href="#start" class="btn btn-dark" data-scroll data-focus="#rtOrder">Start return or exchange <span class="arw">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. FINAL CTA ============ -->
+<section class="ct-final section" data-screen-label="Final CTA">
+  <div class="wrap">
+    <div class="ct-final-card reveal">
+      <div class="cf-inner">
+        <span class="eyebrow">We’ve got you</span>
+        <h2>Still need a hand?</h2>
+        <p>Whether it’s a size swap, a refund, or a waterproof question — our NZ &amp; AU team is here to help.</p>
+        <a href="Contact Us.html" class="btn btn-primary">Contact OSZEA <span class="arw">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" data-screen-label="Footer">
+  <canvas class="foot-water" id="footWater" aria-hidden="true"></canvas>
+  <div class="foot-ticker"><div class="foot-ticker-track" id="tickerTrack"></div></div>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="fb-statement">Forget the <span class="teal">Forecast.</span></div>
+        <p class="fb-sub">Waterproof comfort made for real NZ &amp; AU weather.</p>
+        <div class="foot-news">
+          <div class="fn-lab">Stay Dry With Us</div>
+          <form class="foot-news-form" novalidate>
+            <input type="email" placeholder="Enter your email" aria-label="Email" required>
+            <button class="btn btn-primary btn-sm" type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">Men</a></li><li><a href="#">Women</a></li><li><a href="#">Kids</a></li>
+          <li><a href="#">Elements</a></li><li><a href="#">Add-ons</a></li>
+          <li><a href="#">Tasman Essentials</a></li><li><a href="#">Urban Essentials</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Brand</h4>
+        <ul>
+          <li><a href="Our Story.html">Our Story</a></li><li><a href="ZEA-TEX Technology.html">ZEA-TEX™</a></li>
+          <li><a href="#">Waterproof Comfort</a></li><li><a href="#">Sustainability</a></li><li><a href="#">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="Contact Us.html">Contact Us</a></li><li><a href="Shipping &amp; Tracking.html">Shipping</a></li>
+          <li><a href="Returns &amp; Exchanges.html">Returns &amp; Exchanges</a></li><li><a href="Size Guide.html">Size Guide</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li><li><a href="Privacy Policy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>RainClub</h4>
+        <ul>
+          <li><a href="#">Join RainClub</a></li><li><a href="#">@oszeaofficial</a></li>
+          <li><a href="#">#RainClub</a></li><li><a href="#">Customer Stories</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-watermark" aria-hidden="true"><span class="fw-word">OSZEA</span></div>
+    <div class="foot-bottom">
+      <div class="fb-left">
+        <span>© 2026 OSZEA Footwear. All rights reserved.</span>
+        <a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+        <div class="foot-pay"><span class="pay">VISA</span><span class="pay">MC</span><span class="pay">AMEX</span><span class="pay">PAY</span><span class="pay">GPAY</span></div>
+        <span class="foot-cur">🇳🇿 NZD / AUD ▾</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mmenu" id="mmenu">
+  <div class="scrim"></div>
+  <div class="panel">
+    <div class="m-top">
+      <img src="assets/oszea-logo.png" alt="OSZEA">
+      <button class="icon-btn" data-mclose aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <a class="m-link" href="#">Men <span class="arw">→</span></a>
+    <a class="m-link" href="#">Women <span class="arw">→</span></a>
+    <a class="m-link" href="#">Kids <span class="arw">→</span></a>
+    <a class="m-link" href="#">Elements <span class="arw">→</span></a>
+    <a class="m-link" href="ZEA-TEX Technology.html">ZEA-TEX™ <span class="arw">→</span></a>
+  </div>
+</div>
+
+<!-- ============ STICKY MOBILE HELP ============ -->
+<a class="ct-sticky-help" id="stickyHelp" href="#start" data-scroll data-near="#start">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6h6"/><path d="M3 13a9 9 0 1 0 2.5-6.4L3 9"/></svg>
+  Start a return
+</a>
+
+<div class="toast-zone" id="toastZone"></div>
+
+<script src="js/support-pages.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shipping &amp; Tracking — Track your OSZEA order · Forget the Forecast</title>
+<meta name="description" content="Track your OSZEA order across New Zealand and Australia. Free shipping over $100, trusted delivery partners, and tracking with every order.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/map-footer.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/support-pages.css">
+</head>
+<body>
+
+<!-- ============ ANNOUNCEMENT BAR ============ -->
+<div class="announce" data-screen-label="Announcement bar">
+  <div class="announce-inner">
+    <div class="announce-spacer"></div>
+    <div class="announce-msgs">
+      <div class="announce-msg active"><span class="dot"></span><span>Free standard shipping on orders over <b>$100</b> across NZ &amp; AU.</span></div>
+    </div>
+    <div class="announce-side">
+      <button class="cur-sel"><span class="flag">🇳🇿</span><span>NZD</span><span class="label-hide" style="opacity:.5">/ AUD</span></button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<div class="nav-zone" id="navZone">
+  <nav class="nav wrap-nav" aria-label="Primary">
+    <div class="nav-links desktop">
+      <a class="nav-link" href="#">Men</a>
+      <a class="nav-link" href="#">Women</a>
+      <a class="nav-link" href="#">Kids</a>
+      <a class="nav-link" href="#">Elements</a>
+      <a class="nav-link" href="ZEA-TEX Technology.html">ZEA-TEX™</a>
+    </div>
+    <button class="hamburger icon-btn mobile-only" id="hamBtn" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <a class="nav-logo" href="index.html" aria-label="OSZEA home"><img src="assets/oszea-logo.png" alt="OSZEA"></a>
+    <div class="nav-actions">
+      <button class="icon-btn hide-mobile" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+      <button class="icon-btn hide-mobile" aria-label="Account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+      </button>
+    </div>
+  </nav>
+</div>
+
+<main data-screen-label="Shipping & Tracking page">
+
+<!-- ============ BREADCRUMB ============ -->
+<div class="ct-crumb">
+  <div class="wrap">
+    <a href="index.html">Home</a><span class="sep">/</span><a href="Contact Us.html">Support</a><span class="sep">/</span><span class="here">Shipping &amp; Tracking</span>
+  </div>
+</div>
+
+<!-- ============ 1. HERO ============ -->
+<section class="ct-hero section" data-screen-label="Hero">
+  <div class="wrap">
+    <div class="ct-hero-card reveal">
+      <div class="ct-hero-text">
+        <span class="eyebrow">Shipping &amp; Tracking</span>
+        <h1 class="ct-hero-h1">Track your <span class="accent-word">OSZEA order</span></h1>
+        <p class="ct-hero-sub">From our warehouse to your doorstep — follow your order across New Zealand and Australia.</p>
+        <div class="sp-weather">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2M5 5l1.5 1.5M2 12h2M20 12h2M17.5 6.5 19 5M16 14a4 4 0 1 0-8 0"/><path d="M5 18h14M7 21h10"/></svg>
+          Rain or shine, we’ll help you find your pair.
+        </div>
+        <div class="ct-hero-cta">
+          <a href="#track" class="btn btn-primary" data-scroll data-focus="#tkOrder">Track my order <span class="arw">→</span></a>
+          <a href="Contact Us.html" class="btn btn-dark">Contact support <span class="arw">→</span></a>
+        </div>
+        <div class="ct-hero-trust"><span class="pulse"></span> Tracking sent by email on every dispatched order</div>
+      </div>
+      <div class="ct-hero-media">
+        <div class="ph"><span class="ph-label">[ Shipping Hero — OSZEA box at the door on a wet NZ doorstep ]</span></div>
+        <!-- Shopify: replace .ph with <img class="ph-img" src="…" alt="…"> -->
+        <canvas class="ct-hero-rain" id="heroRain" aria-hidden="true"></canvas>
+        <div class="ct-hero-float">
+          <span class="hf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17.5" cy="18" r="1.6"/></svg></span>
+          <span><span class="hf-t">Aramex · NZ Post · Australia Post</span><br><span class="hf-s">Trusted delivery across NZ &amp; AU</span></span>
+        </div>
+      </div>
+    </div>
+    <div class="ct-scrollcue">Track &amp; explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg></div>
+  </div>
+</section>
+
+<!-- ============ 2. ORDER TRACKING CARD (focal) ============ -->
+<section class="sp-lookup-sec section section-pad" id="track" data-screen-label="Order tracking">
+  <div class="wrap">
+    <div class="sp-lookup reveal">
+      <div class="sp-lookup-pad">
+        <div class="sp-lookup-head">
+          <span class="sp-lookup-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5z"/><circle cx="7" cy="18" r="1.8"/><circle cx="17.5" cy="18" r="1.8"/></svg></span>
+          <div>
+            <span class="eyebrow">Order tracking</span>
+            <h2>Find your order</h2>
+            <p>Enter your order number and the email you used at checkout — we’ll pull up the latest tracking update.</p>
+          </div>
+        </div>
+
+        <!-- form box -->
+        <div id="trackFormBox">
+          <form id="trackLookupForm" novalidate>
+            <div class="sp-lookup-grid">
+              <div class="cf-field">
+                <label for="tkOrder">Order number</label>
+                <div class="cf-inwrap">
+                  <svg class="cf-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16v13H4z"/><path d="M4 7l2-3h12l2 3"/><path d="M9 11h6"/></svg>
+                  <input class="cf-input" id="tkOrder" type="text" placeholder="#OSZEA1234 or order number" required>
+                </div>
+                <div class="cf-err">Please enter your order number</div>
+              </div>
+              <div class="cf-field">
+                <label for="tkEmail">Email address</label>
+                <div class="cf-inwrap">
+                  <svg class="cf-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                  <input class="cf-input" id="tkEmail" type="email" placeholder="Enter the email used at checkout" required>
+                </div>
+                <div class="cf-err">Please enter a valid email</div>
+              </div>
+            </div>
+            <div class="sp-lookup-foot">
+              <button class="btn btn-primary ohub-submit" type="submit"><span class="spin"></span><span class="lab">Find my order</span> <span class="arw">→</span></button>
+              <p class="sp-lookup-helper"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span>Use the email address you entered when placing your order. We’ll only show your order once it matches — your details stay private.</span></p>
+            </div>
+          </form>
+
+          <!-- empty state -->
+          <div class="sp-empty" id="trackEmpty">
+            <span class="se-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.3L3 21l1.5-6A8.5 8.5 0 1 1 21 11.5z"/></svg></span>
+            <span>Enter your order details to see the latest tracking update.</span>
+          </div>
+
+          <!-- error state -->
+          <div class="sp-error" id="trackError">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg>
+            <span>We couldn’t find that order. Please check your order number and email, or <a href="Contact Us.html">contact support</a> and we’ll help.</span>
+          </div>
+        </div>
+
+        <!-- result state (demo data — Shopify swaps real fulfilment data) -->
+        <div class="sp-result" id="trackResult">
+          <div class="sp-result-top">
+            <div class="sp-result-order">
+              <span class="sr-chip"><span class="d"></span><span id="trackOrderChip">#1024</span></span>
+            </div>
+            <span class="sp-status"><span class="sp-pulse"></span> Out for delivery</span>
+          </div>
+
+          <div class="sp-result-meta">
+            <div class="sp-meta-cell">
+              <span class="smk">Carrier</span>
+              <span class="smv sp-carrier-tag"><span class="sct-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5z"/></svg></span> NZ Post</span>
+            </div>
+            <div class="sp-meta-cell">
+              <span class="smk">Tracking number</span>
+              <span class="smv mono">NZ4821 6630 09</span>
+            </div>
+            <div class="sp-meta-cell">
+              <span class="smk">Estimated delivery</span>
+              <span class="smv">Tomorrow, by 5pm</span>
+            </div>
+          </div>
+
+          <div class="sp-progress" aria-label="Delivery progress">
+            <div class="spg done"><span class="spg-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 6"/></svg></span><span class="spg-lab">Placed</span></div>
+            <div class="spg done"><span class="spg-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 6"/></svg></span><span class="spg-lab">Packed</span></div>
+            <div class="spg done"><span class="spg-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 6"/></svg></span><span class="spg-lab">Dispatched</span></div>
+            <div class="spg current"><span class="spg-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5z"/></svg></span><span class="spg-lab">Out for delivery</span></div>
+            <div class="spg"><span class="spg-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9H3z"/><path d="M9 20v-6h6v6"/></svg></span><span class="spg-lab">Delivered</span></div>
+          </div>
+
+          <div class="sp-update">
+            <span class="su-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div>
+              <div class="su-k">Latest update</div>
+              <div class="su-t">On board for delivery — Auckland</div>
+              <div class="su-s">Today · 7:42am · Auckland depot</div>
+            </div>
+          </div>
+
+          <div class="sp-result-cta">
+            <a class="btn btn-primary" id="trackGo" href="#" target="_blank" rel="noopener">View live tracking <span class="arw">→</span></a>
+            <a href="#" class="sp-reset" id="trackReset"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6h6"/><path d="M3 13a9 9 0 1 0 2.5-6.4L3 9"/></svg> Track another order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. SHIPPING SUMMARY CARDS ============ -->
+<section class="section section-pad" data-screen-label="Shipping summary">
+  <div class="wrap">
+    <div class="ct-head-center reveal">
+      <span class="eyebrow">The essentials</span>
+      <h2>Shipping made simple</h2>
+      <p>Clear, reliable delivery across New Zealand and Australia.</p>
+    </div>
+    <div class="sp-feat-grid">
+      <div class="sp-feat reveal">
+        <span class="spf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v8H3zM14 9h4l3 3v3h-7z"/><circle cx="7" cy="17" r="1.8"/><circle cx="17.5" cy="17" r="1.8"/></svg></span>
+        <h3>Free shipping over $100</h3>
+        <p>Enjoy free standard shipping on orders over $100 across New Zealand and Australia.</p>
+        <span class="spf-tag">NZ &amp; AU · $100+</span>
+      </div>
+      <div class="sp-feat reveal d1">
+        <span class="spf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="11" r="3"/><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Z"/></svg></span>
+        <h3>NZ &amp; AU delivery</h3>
+        <p>We ship across New Zealand and Australia using trusted courier partners.</p>
+        <span class="spf-tag">Two countries, one team</span>
+      </div>
+      <div class="sp-feat reveal d2">
+        <span class="spf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <h3>Tracking included</h3>
+        <p>Once your order is dispatched, you’ll receive tracking details by email.</p>
+        <span class="spf-tag">Emailed on dispatch</span>
+      </div>
+      <div class="sp-feat reveal d3">
+        <span class="spf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <h3>Safe delivery</h3>
+        <p>Your order is packed carefully and sent with reliable delivery partners.</p>
+        <span class="spf-tag">Packed with care</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. DELIVERY PARTNERS ============ -->
+<section class="ct-form-sec section section-pad" data-screen-label="Delivery partners">
+  <div class="wrap">
+    <div class="ct-head-center reveal">
+      <span class="eyebrow">Who delivers</span>
+      <h2>Our delivery partners</h2>
+      <p>We work with trusted delivery providers to get your OSZEA order to you safely.</p>
+    </div>
+    <div class="sp-carrier-grid">
+      <div class="sp-carrier reveal">
+        <div class="scr-logo">[ Carrier Logo — Aramex ]</div>
+        <div class="scr-body">
+          <div class="scr-row">
+            <span class="scr-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v8H3zM14 9h4l3 3v3h-7z"/><circle cx="7" cy="17" r="1.7"/><circle cx="17.5" cy="17" r="1.7"/></svg></span>
+            <h3>Aramex</h3>
+          </div>
+          <p>Used for selected NZ and AU deliveries.</p>
+        </div>
+      </div>
+      <div class="sp-carrier reveal d1">
+        <div class="scr-logo">[ Carrier Logo — NZ Post ]</div>
+        <div class="scr-body">
+          <div class="scr-row">
+            <span class="scr-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <h3>NZ Post</h3>
+          </div>
+          <p>Used for selected New Zealand deliveries.</p>
+        </div>
+      </div>
+      <div class="sp-carrier reveal d2">
+        <div class="scr-logo">[ Carrier Logo — Australia Post ]</div>
+        <div class="scr-body">
+          <div class="scr-row">
+            <span class="scr-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8l4-4h8l4 4-3 2v10H7V10z"/></svg></span>
+            <h3>Australia Post</h3>
+          </div>
+          <p>Used for selected Australian deliveries.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. SHIPPING TIMELINE ============ -->
+<section class="section section-pad" data-screen-label="Shipping timeline">
+  <div class="wrap">
+    <div class="ct-head-center reveal">
+      <span class="eyebrow">Step by step</span>
+      <h2>What happens after you order?</h2>
+      <p>From checkout to your doorstep — here’s the journey.</p>
+    </div>
+    <div class="sp-timeline">
+      <div class="sp-step reveal">
+        <div class="sps-num"><span class="sps-idx">1</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/><path d="m9 13 2 2 4-4"/></svg></div>
+        <div class="sps-body">
+          <h3>Order placed</h3>
+          <p>We receive your order and begin preparing it.</p>
+        </div>
+      </div>
+      <div class="sp-step reveal d1">
+        <div class="sps-num"><span class="sps-idx">2</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-5 9 5-9 5-9-5Z"/><path d="M3 8v8l9 5 9-5V8"/><path d="m12 13 0 8"/></svg></div>
+        <div class="sps-body">
+          <h3>Order packed</h3>
+          <p>Your OSZEA items are checked and packed.</p>
+        </div>
+      </div>
+      <div class="sp-step reveal d2">
+        <div class="sps-num"><span class="sps-idx">3</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v8H3zM14 9h4l3 3v3h-7z"/><circle cx="7" cy="17" r="1.8"/><circle cx="17.5" cy="17" r="1.8"/></svg></div>
+        <div class="sps-body">
+          <h3>Dispatched</h3>
+          <p>Your parcel is handed to one of our delivery partners.</p>
+        </div>
+      </div>
+      <div class="sp-step reveal d3">
+        <div class="sps-num"><span class="sps-idx">4</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9H3z"/><path d="M9 20v-6h6v6"/></svg></div>
+        <div class="sps-body">
+          <h3>Delivered</h3>
+          <p>Your OSZEAs arrive ready for real weather.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. FAQ ============ -->
+<section class="ct-faq section section-pad ct-form-sec" data-screen-label="Shipping FAQ">
+  <div class="wrap">
+    <div class="ct-head-center reveal">
+      <span class="eyebrow">Quick answers</span>
+      <h2>Shipping questions, answered</h2>
+    </div>
+    <div class="ct-faq-wrap reveal d1">
+      <div class="faq-list" id="faqList">
+        <div class="faq-item">
+          <button class="faq-q" type="button">Do you ship across New Zealand and Australia? <span class="faq-sign"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. OSZEA ships across New Zealand and Australia.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">When will I receive tracking? <span class="faq-sign"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Once your order is dispatched, tracking details will be sent to the email address used at checkout.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">Which courier do you use? <span class="faq-sign"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">We use trusted delivery partners including Aramex, New Zealand Post, and Australia Post.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">How do I track my order? <span class="faq-sign"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Enter your order number and checkout email in the tracking card above, or use the tracking link sent to your email.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">What if my tracking link is not updating? <span class="faq-sign"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Tracking can sometimes take time to update after dispatch. If it has not updated after a reasonable time, <a href="Contact Us.html">contact OSZEA support</a>.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">Do you offer free shipping? <span class="faq-sign"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. Free standard shipping is available on orders over $100 across NZ &amp; AU.</div></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:38px">
+        <a href="Contact Us.html" class="btn btn-dark">Still need help? Contact support <span class="arw">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. FINAL CTA ============ -->
+<section class="ct-final section" data-screen-label="Final CTA">
+  <div class="wrap">
+    <div class="ct-final-card reveal">
+      <div class="cf-inner">
+        <span class="eyebrow">We’ve got you</span>
+        <h2>Can’t find your order?</h2>
+        <p>If your tracking isn’t updating or something doesn’t look right, our NZ &amp; AU team is here to help.</p>
+        <a href="Contact Us.html" class="btn btn-primary">Contact OSZEA <span class="arw">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" data-screen-label="Footer">
+  <canvas class="foot-water" id="footWater" aria-hidden="true"></canvas>
+  <div class="foot-ticker"><div class="foot-ticker-track" id="tickerTrack"></div></div>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="fb-statement">Forget the <span class="teal">Forecast.</span></div>
+        <p class="fb-sub">Waterproof comfort made for real NZ &amp; AU weather.</p>
+        <div class="foot-news">
+          <div class="fn-lab">Stay Dry With Us</div>
+          <form class="foot-news-form" novalidate>
+            <input type="email" placeholder="Enter your email" aria-label="Email" required>
+            <button class="btn btn-primary btn-sm" type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">Men</a></li><li><a href="#">Women</a></li><li><a href="#">Kids</a></li>
+          <li><a href="#">Elements</a></li><li><a href="#">Add-ons</a></li>
+          <li><a href="#">Tasman Essentials</a></li><li><a href="#">Urban Essentials</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Brand</h4>
+        <ul>
+          <li><a href="Our Story.html">Our Story</a></li><li><a href="ZEA-TEX Technology.html">ZEA-TEX™</a></li>
+          <li><a href="#">Waterproof Comfort</a></li><li><a href="#">Sustainability</a></li><li><a href="#">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="Contact Us.html">Contact Us</a></li><li><a href="Shipping &amp; Tracking.html">Shipping</a></li>
+          <li><a href="Returns &amp; Exchanges.html">Returns &amp; Exchanges</a></li><li><a href="Size Guide.html">Size Guide</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li><li><a href="Privacy Policy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>RainClub</h4>
+        <ul>
+          <li><a href="#">Join RainClub</a></li><li><a href="#">@oszeaofficial</a></li>
+          <li><a href="#">#RainClub</a></li><li><a href="#">Customer Stories</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-watermark" aria-hidden="true"><span class="fw-word">OSZEA</span></div>
+    <div class="foot-bottom">
+      <div class="fb-left">
+        <span>© 2026 OSZEA Footwear. All rights reserved.</span>
+        <a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+        <div class="foot-pay"><span class="pay">VISA</span><span class="pay">MC</span><span class="pay">AMEX</span><span class="pay">PAY</span><span class="pay">GPAY</span></div>
+        <span class="foot-cur">🇳🇿 NZD / AUD ▾</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mmenu" id="mmenu">
+  <div class="scrim"></div>
+  <div class="panel">
+    <div class="m-top">
+      <img src="assets/oszea-logo.png" alt="OSZEA">
+      <button class="icon-btn" data-mclose aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <a class="m-link" href="#">Men <span class="arw">→</span></a>
+    <a class="m-link" href="#">Women <span class="arw">→</span></a>
+    <a class="m-link" href="#">Kids <span class="arw">→</span></a>
+    <a class="m-link" href="#">Elements <span class="arw">→</span></a>
+    <a class="m-link" href="ZEA-TEX Technology.html">ZEA-TEX™ <span class="arw">→</span></a>
+  </div>
+</div>
+
+<!-- ============ STICKY MOBILE HELP ============ -->
+<a class="ct-sticky-help" id="stickyHelp" href="#track" data-scroll data-near="#track">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17.5" cy="18" r="1.6"/></svg>
+  Track order
+</a>
+
+<div class="toast-zone" id="toastZone"></div>
+
+<script src="js/support-pages.js" defer></script>
+</body>
+</html>

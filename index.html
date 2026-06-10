@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSZEA — Forget the Forecast. Waterproof comfort for real NZ &amp; AU weather.</title>
+<meta name="description" content="OSZEA makes waterproof comfort footwear built for real New Zealand and Australian weather. Tasman Essentials, Urban Essentials and weather-ready Elements. Forget the Forecast.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/forecast.css">
+<link rel="stylesheet" href="css/blocks.css">
+<link rel="stylesheet" href="css/map-footer.css">
+</head>
+<body data-hero="left">
+
+<!-- ============ ANNOUNCEMENT BAR ============ -->
+<div class="announce" data-screen-label="Announcement bar">
+  <div class="announce-inner">
+    <div class="announce-spacer"></div>
+    <div class="announce-msgs" id="announceMsgs">
+      <div class="announce-msg active"><span class="dot"></span><span><b>ZEA-TEX™</b> keeps water out. Your socks stay dry.</span></div>
+      <div class="announce-msg"><span class="dot"></span><span><b>Free shipping</b> over $100 across NZ &amp; AU</span></div>
+      <div class="announce-msg"><span class="dot"></span><span><b>10,000+</b> customers across NZ &amp; AU</span></div>
+    </div>
+    <div class="announce-side">
+      <button class="cur-sel" id="curBtn"><span class="flag">🇳🇿</span><span>NZD</span><span class="label-hide" style="opacity:.5">/ AUD</span></button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<div class="nav-zone" id="navZone">
+  <nav class="nav wrap-nav" aria-label="Primary">
+    <div class="nav-links desktop">
+      <a class="nav-link" href="#">Men</a>
+      <a class="nav-link" href="#">Women</a>
+      <a class="nav-link" href="#">Kids</a>
+      <a class="nav-link" href="#elements">Elements</a>
+      <a class="nav-link" href="#socks">Add&nbsp;Ons</a>
+    </div>
+    <button class="hamburger icon-btn mobile-only" id="hamBtn" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <a class="nav-logo" href="#" aria-label="OSZEA home"><img src="assets/oszea-logo.png" alt="OSZEA"></a>
+    <div class="nav-actions">
+      <button class="icon-btn hide-mobile" id="searchBtn" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+      <button class="icon-btn hide-mobile" aria-label="Account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+      </button>
+      <button class="icon-btn" id="cartBtn" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+    <div class="nav-search" id="navSearch">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px;color:var(--grey-400)"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="text" placeholder="Search waterproof shoes, hats, socks…" id="searchInput">
+      <span class="hint">ESC</span>
+    </div>
+  </nav>
+</div>
+
+<!-- ============ HERO — full-bleed image slider (nav floats over it) ============ -->
+<header class="hero" id="hero" data-screen-label="Hero">
+  <div class="hero-track" id="heroTrack">
+
+    <!-- ===== SLIDE 1 ===== -->
+    <div class="hero-slide active" data-slide="0">
+      <!-- HERO MEDIA — IMAGE *or* VIDEO (Shopify swaps this block per slide).
+           IMAGE:  <img class="hero-media-el" src="{{ block.settings.image | image_url: width: 2400 }}" alt="…">
+           VIDEO:  <video class="hero-media-el" autoplay muted loop playsinline poster="…"><source src="…" type="video/mp4"></video>
+           Both fill via object-fit:cover. Keep ONE; delete the placeholder. -->
+      <div class="hero-media"><div class="ph"><span class="ph-label">[ Hero — OSZEA Shoes In Rain / Wet Street ]</span></div></div>
+      <span class="hero-scrim"></span>
+      <div class="hero-content wrap">
+        <span class="hero-badge">
+          <span class="hb-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5v2"/><path d="M3.2 12a8.8 8.8 0 0 1 17.6 0Z"/><path d="M3.2 12h17.6"/><path d="M12 12v6.6a2.4 2.4 0 0 0 4 0"/></svg></span>
+          <span class="hb-txt">100% Waterproof — ZEA-TEX™</span>
+        </span>
+        <h1 class="hero-h1">
+          <span class="line"><span>Rain Is Back.</span></span>
+          <span class="line"><span><span class="accent-word">Wet Socks</span> Aren't.</span></span>
+        </h1>
+        <p class="hero-sub">Waterproof comfort for workdays, school runs, beach walks, and sideways rain.</p>
+        <div class="hero-cta">
+          <a href="#featured" class="btn btn-primary">Shop Tasman <span class="arw">→</span></a>
+          <a href="#featured" class="btn btn-outline">Shop Waterproof Shoes <span class="arw">→</span></a>
+          <a href="#tech" class="hero-link">Explore ZEA-TEX™ <span class="arw">→</span></a>
+        </div>
+        <p class="hero-micro">Auckland drizzle. Wellington wind. Melbourne mood swings. Sorted.</p>
+      </div>
+    </div>
+
+    <!-- ===== SLIDE 2 ===== -->
+    <div class="hero-slide" data-slide="1">
+      <div class="hero-media"><div class="ph"><span class="ph-label">[ Hero — Rainy City Commute ]</span></div></div>
+      <span class="hero-scrim"></span>
+      <div class="hero-content wrap">
+        <span class="hero-badge">
+          <span class="hb-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5v2"/><path d="M3.2 12a8.8 8.8 0 0 1 17.6 0Z"/><path d="M3.2 12h17.6"/><path d="M12 12v6.6a2.4 2.4 0 0 0 4 0"/></svg></span>
+          <span class="hb-txt">Forget the Forecast</span>
+        </span>
+        <h1 class="hero-h1">
+          <span class="line"><span>Built for the</span></span>
+          <span class="line"><span>Weather You <span class="accent-word">Get.</span></span></span>
+        </h1>
+        <p class="hero-sub">Dry feet through Auckland drizzle, Wellington wind and Melbourne mood swings.</p>
+        <div class="hero-cta">
+          <a href="#featured" class="btn btn-primary">Shop Waterproof Shoes <span class="arw">→</span></a>
+          <a href="#tech" class="hero-link">Explore ZEA-TEX™ <span class="arw">→</span></a>
+        </div>
+        <p class="hero-micro">Rain, wet grass, muddy parks, school runs — sorted.</p>
+      </div>
+    </div>
+
+    <!-- ===== SLIDE 3 ===== -->
+    <div class="hero-slide" data-slide="2">
+      <div class="hero-media"><div class="ph"><span class="ph-label">[ Hero — Beach Walk After Rain ]</span></div></div>
+      <span class="hero-scrim"></span>
+      <div class="hero-content wrap">
+        <span class="hero-badge">
+          <span class="hb-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5v2"/><path d="M3.2 12a8.8 8.8 0 0 1 17.6 0Z"/><path d="M3.2 12h17.6"/><path d="M12 12v6.6a2.4 2.4 0 0 0 4 0"/></svg></span>
+          <span class="hb-txt">10,000+ across NZ &amp; AU</span>
+        </span>
+        <h1 class="hero-h1">
+          <span class="line"><span>Cloud Comfort.</span></span>
+          <span class="line"><span><span class="accent-word">Zero</span> Wet Socks.</span></span>
+        </h1>
+        <p class="hero-sub">Lightweight waterproof comfort, loved by 10,000+ customers across NZ &amp; AU.</p>
+        <div class="hero-cta">
+          <a href="#featured" class="btn btn-primary">Shop Tasman <span class="arw">→</span></a>
+          <a href="#featured" class="btn btn-outline">Shop the Range <span class="arw">→</span></a>
+        </div>
+        <p class="hero-micro">Free shipping over $100 across NZ &amp; AU.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="hero-arw prev" id="heroPrev" aria-label="Previous slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <button class="hero-arw next" id="heroNext" aria-label="Next slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+  <div class="hero-dots" id="heroDots">
+    <button class="hero-dot active" data-go="0" aria-label="Slide 1"></button>
+    <button class="hero-dot" data-go="1" aria-label="Slide 2"></button>
+    <button class="hero-dot" data-go="2" aria-label="Slide 3"></button>
+  </div>
+</header>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust section" data-screen-label="Trust strip">
+  <div class="weatherlines subtle"></div>
+  <div class="wrap">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <svg class="trust-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 20.8l1.2-6.6L2.5 9l6.6-.9z"/></svg>
+        <div><div class="tt">4.9 <span class="stars">★★★★★</span></div><div class="ts">Loved by wet-weather walkers</div></div>
+      </div>
+      <div class="trust-item">
+        <svg class="trust-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+        <div><div class="tt">Free Shipping $100+</div><div class="ts">Across NZ &amp; AU</div></div>
+      </div>
+      <div class="trust-item">
+        <svg class="trust-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+        <div><div class="tt">Safe Payments</div><div class="ts">Secure checkout, trusted methods</div></div>
+      </div>
+      <div class="trust-item">
+        <svg class="trust-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s7 3 7 8c0 6-7 12-7 12S5 16 5 10c0-5 7-8 7-8Z"/><path d="m9 11 2 2 4-4"/></svg>
+        <div><div class="tt">Waterproof Promise</div><div class="ts">Built for everyday wet weather</div></div>
+      </div>
+    </div>
+    <div class="trust-note"><span class="dot"></span>10,000+ customers across NZ &amp; AU</div>
+  </div>
+</section>
+
+<!-- SECTIONS CONTINUE -->
+<main id="main"></main>
+
+<div class="toast-zone" id="toastZone"></div>
+
+<script src="js/icons.js"></script>
+<script src="js/data.js"></script>
+<script src="js/sections.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
